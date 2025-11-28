@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球AI技术发展与石化行业应用动态跟踪简报（2025年11月21日 – 2025年11月28日）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* 现代化头部 */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .hero-author {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            color: #fbbf24;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .hero-author a {
+            color: #fbbf24;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .hero-author a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .hero-author::before {
+            content: '📝';
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            color: #fbbf24;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* 内容区域 */
+        .content-wrapper {
+            background: #f8fafc;
+            min-height: 100vh;
+            padding: 1rem 0;
+        }
+
+        /* 章节样式 */
+        .section {
+            margin-bottom: 6rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 目录样式 */
+        .table-of-contents {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .toc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .toc-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .toc-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #475569;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-item:hover {
+            background: #e2e8f0;
+            border-left-color: #667eea;
+            transform: translateX(4px);
+        }
+
+        .toc-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .toc-text {
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* 卡片网格 */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+        }
+
+        /* 卡片样式 */
+        .news-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .news-card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .card-title-section {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .card-date {
+            font-size: 0.85rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-date::before {
+            content: '📅';
+        }
+
+        .card-content {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section {
+            margin-bottom: 1rem;
+        }
+
+        .content-label {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .content-text {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .source {
+            font-size: 0.85rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .source::before {
+            content: '🔗';
+        }
+
+        .btn-original {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-original:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-original::after {
+            content: '→';
+            transition: transform 0.3s ease;
+        }
+
+        .btn-original:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* 页脚 */
+        .footer {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .section {
+                margin-bottom: 3rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .toc-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .toc-link {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .news-card {
+                padding: 1.5rem;
+            }
+
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .card-number {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .card-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .btn-original {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .news-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .news-card:nth-child(even) {
+            animation-delay: 0.1s;
+        }
+
+        /* 锚点偏移 */
+        .anchor-offset {
+            scroll-margin-top: 2rem;
+        }
+
+        /* 切换按钮样式 */
+        .section-toggle {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            position: sticky;
+            top: 2rem;
+            z-index: 100;
+        }
+
+        .toggle-container {
+            background: white;
+            border-radius: 50px;
+            padding: 6px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toggle-btn {
+            padding: 12px 24px;
+            border: none;
+            background: transparent;
+            color: #64748b;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 44px;
+            position: relative;
+            z-index: 2;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toggle-btn.active {
+            color: white;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            height: calc(100% - 12px);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 44px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+        }
+
+        /* 章节显示/隐藏 */
+        .section {
+            transition: all 0.5s ease;
+        }
+
+        .section.hidden {
+            display: none;
+        }
+
+        .section.fade-out {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .section.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .section-toggle {
+                margin: 2rem 1rem;
+                top: 1rem;
+            }
+
+            .toggle-container {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .toggle-btn {
+                flex: 1;
+                padding: 14px 16px;
+                font-size: 0.9rem;
+                justify-content: center;
+            }
+
+            .toggle-btn span {
+                margin-left: 16px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toggle-btn {
+                padding: 12px 8px;
+                font-size: 0.85rem;
+            }
+
+            .toggle-btn span {
+                margin-left: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">全球AI技术发展与石化行业应用动态跟踪简报</h1>
+            <p class="hero-subtitle">时间范围：2025年11月21日 – 2025年11月28日</p>
+            <p class="hero-author">简报制作：<a href="https://media.cheminfo.cn/" target="_blank">中国化信 • 情报</a></p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">30</span>
+                    <span class="stat-label">重要资讯</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">核心领域</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">天数覆盖</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主内容区域 -->
+    <div class="content-wrapper">
+        <div class="container">
+            <!-- 切换按钮 -->
+            <div class="section-toggle">
+                <div class="toggle-container">
+                    <div class="toggle-slider"></div>
+                    <button class="toggle-btn active" data-section="energy-app">
+                        <span>🛢️ 石化应用动态</span>
+                    </button>
+                    <button class="toggle-btn" data-section="ai-tech">
+                        <span>🧠 全球技术动态</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 第一部分：石化应用动态 -->
+            <section class="section" id="energy-app">
+                <div class="section-header">
+                    <h2 class="section-title anchor-offset">石化应用动态</h2>
+                    <p class="section-description">梳理石化行业 AI 技术应用新动态，洞察技术融合趋势与产业变革方向</p>
+                </div>
+
+                <!-- 石化应用动态目录 -->
+                <div class="table-of-contents">
+                    <div class="toc-header">
+                        <h3 class="toc-title">📋 资讯目录</h3>
+                        <a href="https://vip.cheminfo.cn/index?tenantid=1" target="_blank" class="toc-link">
+                            进入中国化工信息网查看更多AI+动态
+                        </a>
+                    </div>
+                    <div class="toc-grid">
+                        <a href="#energy-1" class="toc-item"><div class="toc-number">1</div><div class="toc-text">ENEOS Material通过AI控制系统实现丁二烯蒸馏塔能耗降低40%</div></a>
+<a href="#energy-2" class="toc-item"><div class="toc-number">2</div><div class="toc-text">LG化学全面部署AI技术提升质量预测与运营效率</div></a>
+<a href="#energy-3" class="toc-item"><div class="toc-number">3</div><div class="toc-text">住友橡胶与NEC合作利用AI实现轮胎材料配方预测与开发时间缩短95%</div></a>
+<a href="#energy-4" class="toc-item"><div class="toc-number">4</div><div class="toc-text">富士胶片静冈工厂引入AI技术实现半导体材料高效评估与质量保证</div></a>
+<a href="#energy-5" class="toc-item"><div class="toc-number">5</div><div class="toc-text">世索科通过HTP与AI技术融合实现农化制剂研发范式升级</div></a>
+<a href="#energy-6" class="toc-item"><div class="toc-number">6</div><div class="toc-text">立邦中国AI飞轮项目构建智能循环体系推动多环节协同创新</div></a>
+<a href="#energy-7" class="toc-item"><div class="toc-number">7</div><div class="toc-text">Keppel与JTC合作推进AI驱动数字能源平台建设</div></a>
+<a href="#energy-8" class="toc-item"><div class="toc-number">8</div><div class="toc-text">嘉必优构建智能化合成生物学研发体系提升生物制造效率</div></a>
+<a href="#energy-9" class="toc-item"><div class="toc-number">9</div><div class="toc-text">岳阳林纸推进AI在能源管理与碳汇业务中的应用</div></a>
+<a href="#energy-10" class="toc-item"><div class="toc-number">10</div><div class="toc-text">科迪华通过AI与高通量筛选加速可持续农化制剂开发</div></a>
+<a href="#energy-11" class="toc-item"><div class="toc-number">11</div><div class="toc-text">拜耳制药利用AI技术加速基因疗法生物制造过程</div></a>
+<a href="#energy-12" class="toc-item"><div class="toc-number">12</div><div class="toc-text">印度推动AI驱动药物发现与原料药生态系统建设</div></a>
+<a href="#energy-13" class="toc-item"><div class="toc-number">13</div><div class="toc-text">沙特研究团队利用机器学习预测CFRP复合材料碰撞性能</div></a>
+<a href="#energy-14" class="toc-item"><div class="toc-number">14</div><div class="toc-text">哥本哈根大学开发贝叶斯神经常微分方程框架研究化学品混合物影响</div></a>
+<a href="#energy-15" class="toc-item"><div class="toc-number">15</div><div class="toc-text">印度利用AI技术推动农业智能化与精准灌溉</div></a>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="news-card" id="energy-1">
+                        <div class="card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title-section">
+                                <div class="card-title">ENEOS Material通过AI控制系统实现丁二烯蒸馏塔能耗降低40%</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">ENEOS Material在其四日市弹性体工厂的丁二烯蒸馏塔热回收流程中引入AI控制系统，实现自动控制废热再利用，取代了每15分钟手动调整阀门的传统操作方式。该系统不仅大幅减轻操作人员负担，还实现了全年丁二烯品质的稳定，能耗降低约40%，显著提升了成本竞争力。公司正在持续优化系统并计划向其他生产流程扩展，同时决定扩大高功能轮胎用S-SBR产能至7万吨/年。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用实现了石化生产过程的智能化升级，通过AI精准控制热回收流程，在保证产品质量稳定的同时大幅降低能耗，为传统化工生产提供了可复制的数字化转型样板，具有显著的经济效益和环保价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993198008202366976?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=ObqSUrhrQdrT_9_fU8bEbZCINSAGHvOr_iSMG-rznOw" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-2">
+                        <div class="card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title-section">
+                                <div class="card-title">LG化学全面部署AI技术提升质量预测与运营效率</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">LG化学正在通过AI全面革新业务运作，涵盖质量预测、流程优化、合同审查及汇率预测等领域。公司推出'公民数据科学家'平台，使非技术人员也能参与数据分析，在试点项目中40名员工发现20项改进，包括提升反渗透膜产量和电池隔膜质量。在丽水石化厂部署基于深度学习的图像分析系统检测火炬塔异常，提高运营效率。同时利用AI预测吸水性聚合物性能，优化水分含量，使客户产品加工更便捷。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用实现了从研发到生产的全链条AI赋能，通过民主化数据分析能力激发全员创新潜力，在提升产品质量和生产效率的同时降低运营成本，体现了AI在化工企业数字化转型中的综合价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993024362712338432?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=uw4QZfXs2edHuWLg9B4jdW5o9rt8HJt8prTJE_pBo98" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-3">
+                        <div class="card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title-section">
+                                <div class="card-title">住友橡胶与NEC合作利用AI实现轮胎材料配方预测与开发时间缩短95%</div>
+                                <div class="card-date">2025年11月27日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">住友橡胶工业与NEC合作，结合NEC的AI技术与住友橡胶的研发能力，在轮胎材料配方预测和新材料探索方面取得突破。利用模拟量子退火技术分析材料特性影响，90%以上目标特性项目可实现，非熟练人员完成同类配方开发时间缩短约95%。在新材料探索方面，构建学习材料开发人员隐性知识的AI代理，结合生成AI与图基AI，将探索时间缩短60%-70%，成功验证'接触水后轮胎表面橡胶变软'的高端轮胎材料模型。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过AI技术深度挖掘隐性知识，大幅缩短新材料研发周期，突破了传统材料开发的效率瓶颈，为化工行业研发模式创新提供了示范，具有显著的商业价值和行业变革意义。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1994005797824827392?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=x5bmZAPq_72qC1h8jm2N3TI41U91374FQnMIQkSLtxc" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-4">
+                        <div class="card-header">
+                            <div class="card-number">4</div>
+                            <div class="card-title-section">
+                                <div class="card-title">富士胶片静冈工厂引入AI技术实现半导体材料高效评估与质量保证</div>
+                                <div class="card-date">2025年11月27日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">富士胶片在静冈工厂新建的半导体材料开发与评估建筑中引入AI技术，实现高效的质量保证与作业时间缩短。新建筑投资约130亿日元，主要用于先进光刻胶（包括MOR、EUV、ArF等）、图像传感器材料以及纳米压印光刻用光刻胶的评估分析。通过AI技术优化评估流程，提升材料在颜色均匀分散和透光率等关键指标的评估效率，支持全球客户需求，助力实现2030年度5000亿日元的半导体材料业务目标。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用将AI技术融入高端材料研发评估环节，在提升检测精度和效率的同时降低人工成本，为化工材料行业的质量控制提供了智能化解决方案，具有重要的技术突破价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1994028433762095104?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=PmdVdzjMRYbf_SQk3dHXBiZ5xwQc4yjKwuz-MnaLUJ8" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-5">
+                        <div class="card-header">
+                            <div class="card-number">5</div>
+                            <div class="card-title-section">
+                                <div class="card-title">世索科通过HTP与AI技术融合实现农化制剂研发范式升级</div>
+                                <div class="card-date">2025年11月27日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">世索科在农化制剂研发中融合高通量筛选平台HTP与人工智能技术AI，显著加速助剂筛选与配方优化进程。通过自动化机器人系统在2小时内完成117种混合溶剂筛选，开发出绿色高性能溶剂用于乳油配方。在悬浮剂开发中，利用机器人系统测试90多种分散剂，制备表征超过600个配方，最终筛选出可生物降解分散剂。HTP-AI闭环构成新一代研发范式核心，将化学品研发从经验驱动转变为数据驱动。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过HTP与AI的深度融合，实现了农化制剂研发的自动化和智能化，大幅提升研发效率并降低开发成本，为化工行业研发创新提供了可复制的技术路径，具有重要的行业示范意义。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1994073732241100800?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=AjeQOsY_V0F73XJXnD6WwZWFWQ6Dr34JS0yD27v5Lb8" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-6">
+                        <div class="card-header">
+                            <div class="card-number">6</div>
+                            <div class="card-title-section">
+                                <div class="card-title">立邦中国AI飞轮项目构建智能循环体系推动多环节协同创新</div>
+                                <div class="card-date">2025年11月27日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">立邦中国'AI飞轮项目'荣获'AI+创新应用典范案例'奖，该项目借鉴物理学中的飞轮效应，构建知识资产与AI技术融合的智能循环体系，推动研发、运营和客户服务等环节的协同创新。自2017年起已构建数据仓库、流数融合价值链等核心平台，形成覆盖数据存储、流程优化、知识沉淀的全链路数智化基础架构。目前多个AI项目已上线，标志着立邦AI技术从基础建设迈向价值落地阶段。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过构建智能循环体系实现知识资产的持续积累和价值释放，为化工企业数字化转型提供了系统性解决方案，在提升运营效率和创新能力方面具有重要示范价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1994232346171871232?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=UWXW8b16cpTUQaaQZnoewA1FpWZiD-QXhPcPXTnzTXM" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-7">
+                        <div class="card-header">
+                            <div class="card-number">7</div>
+                            <div class="card-title-section">
+                                <div class="card-title">Keppel与JTC合作推进AI驱动数字能源平台建设</div>
+                                <div class="card-date">2025年11月26日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">新加坡Keppel Ltd.与JTC Corp.签署备忘录，在裕廊岛加速低碳能源基础设施建设，合作领域包括人工智能驱动的数字能源平台。双方将开展集成式低碳区域能源解决方案、智能微电网试验床等研究，利用Keppel现有设施如Merlimau Cogen和Sakra Cogen氢能兼容发电厂，共享冷却、热能储存、废热利用、数字优化等技术。合作旨在推动新加坡低碳数据中心园区发展，潜在容量达700 MW。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过AI技术优化能源管理系统，实现多能互补和智能调度，为化工园区能源基础设施的智能化升级提供了创新模式，在提升能源利用效率和降低碳排放方面具有重要价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993635893435109376?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=CDTrK29wKCslAFoOZRoH79Xm7kJW2tKuHpLgf4I0F5w" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-8">
+                        <div class="card-header">
+                            <div class="card-number">8</div>
+                            <div class="card-title-section">
+                                <div class="card-title">嘉必优构建智能化合成生物学研发体系提升生物制造效率</div>
+                                <div class="card-date">2025年11月26日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">嘉必优入选工信部首批生物制造中试能力建设平台，构建了智能化合成生物学研发体系。公司引入高通量机械臂与单细胞拉曼流式分选仪，自建独立算力平台支持蛋白质结构预测、酶理性设计及小分子药物模拟。部署DeepSeek-R132B、70B等大模型，构建合成生物学知识图谱，开发'转录组数据智能分析助手'和'蛋白质结构预测与分子对接智能处理助手'。通过AI技术加速2'-岩藻糖基乳糖和藻油DHA等高附加值产品的研发进程。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用将AI技术深度融入生物制造研发全链条，在提升研发效率和产品品质的同时降低开发成本，为生物化工行业的智能化转型提供了先进范例，具有重要的技术引领价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993545284338782208?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=tQYfNXVl3noTOe0Qq5XPpvoyz1HEJbHWucpJwH4VMoo" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-9">
+                        <div class="card-header">
+                            <div class="card-number">9</div>
+                            <div class="card-title-section">
+                                <div class="card-title">岳阳林纸推进AI在能源管理与碳汇业务中的应用</div>
+                                <div class="card-date">2025年11月25日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">岳阳林纸在第三季度业绩说明会中表示，公司正在将AI技术适配到具体应用场景，如通过AI赋能提升碳汇图像识别效率。未来将探索AI在能源热能运用及产供销运营管理中的深度应用，以提升运营效率和效益。碳汇业务有望成为公司第二增长极，与现有林浆纸业务形成良好互补，同时可对冲传统造纸业务的周期性波动。随着林业碳汇纳入全国碳市场抵消机制，AI技术将在碳汇监测和管理中发挥重要作用。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用将AI技术拓展至能源管理和碳汇业务领域，在提升传统业务运营效率的同时开拓新的增长点，为化工能源企业的可持续发展提供了创新路径，具有重要的战略价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993348960091836416?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=I5NtQvjvVh6K0JrFN97u-ZZEh-gCAOCVknt-mi8653U" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-10">
+                        <div class="card-header">
+                            <div class="card-number">10</div>
+                            <div class="card-title-section">
+                                <div class="card-title">科迪华通过AI与高通量筛选加速可持续农化制剂开发</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">科迪华在农化制剂开发中整合人工智能技术，依托高通量筛选及GenAE系统加速配方研发进程。通过乳剂浓缩液工作流程的高通量实验，将样品制备和乳剂筛选的时间和样品需求减少95%。在生物制剂开发中引入机器人自动化，实现快速、经济、准确的筛选过程，消耗品减少超过90%。GenAE 1.0系统通过生成式AI工作流程在计算机模拟中筛选数千个候选配方，优先安排最有可能成功的实验，基于强大历史数据库进行多变量与多目标优化。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过AI技术实现农化制剂的智能化开发和精准设计，在提升研发效率和产品安全性的同时降低环境影响，为绿色化工发展提供了技术支撑，具有重要的行业创新价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993069633081118720?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=9j7DEWms76vMfffnyiU82K_M5noICWL5ht5yAzslTrw" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-11">
+                        <div class="card-header">
+                            <div class="card-number">11</div>
+                            <div class="card-title-section">
+                                <div class="card-title">拜耳制药利用AI技术加速基因疗法生物制造过程</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">拜耳制药研究人员发布关于生物制药制造中人工智能和机器学习应用的研究报告，指出AI技术正在改变单克隆抗体、细胞疗法和基因疗法的制造过程。基于AI的应用对于成功、快速且经济地制造新型生物制剂至关重要，可提高运营效率、增强工艺理解、改进工艺监测并实现更好的合规性。健康监管机构对AI和机器学习的指导正在加速这些新技术在生物制药行业的应用，云计算技术使机器学习应用的开发和部署变得更加容易。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用将AI技术引入高端生物制药制造领域，在提升生产工艺稳定性和合规性的同时降低制造成本，为生物化工行业的技术升级提供了重要方向，具有显著的技术突破价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993205532217511936?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=zxZ88WijkK4iTzdCOzl1-8kAYaKWLugYMmy_5nsW_eo" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-12">
+                        <div class="card-header">
+                            <div class="card-number">12</div>
+                            <div class="card-title-section">
+                                <div class="card-title">印度推动AI驱动药物发现与原料药生态系统建设</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">印度化学与化肥部部长JP Nadda呼吁制药行业减少对进口原料药的依赖，加强本土制造能力，并重点发展AI驱动药物发现技术。印度拥有1,600多个全球能力中心，其中许多专注于制药和生命科学，正在推动先进研发、数字开发和技术驱动的药物发现。根据EY-Parthenon与OPPI联合报告，印度制药行业有望在2047年达到4500亿美元，增长将依赖于更强的创新管道和改进的合同研究、开发和制造组织能力。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过AI技术提升药物研发效率和精准度，在降低对外依赖的同时增强本土创新能力，为化工制药行业的自主发展提供了战略路径，具有重要的产业安全价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993009271619129344?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=TNCGuuQoaUDGBPj9JoTdPIqLBR5ORb2Yfs_rSnQws1s" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-13">
+                        <div class="card-header">
+                            <div class="card-number">13</div>
+                            <div class="card-title-section">
+                                <div class="card-title">沙特研究团队利用机器学习预测CFRP复合材料碰撞性能</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">沙特阿卜杜勒阿齐兹大学研究人员使用机器学习方法预测含孔泡沫填充CFRP矩形管碰撞箱的碰撞性能。通过对比有无泡沫填充及不同孔洞配置的管体性能，发现聚氨酯泡沫填充显著提升了碰撞性能，能量吸收指标较未填充管体提升近三倍。研究使用决策树回归器、线性回归、多层感知器等多种机器学习算法，其中DTR模型预测效果最佳，RMSE为1251，MAPE为11.37%。该方法为化工材料性能预测提供了高效工具。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过机器学习技术实现复合材料性能的精准预测，在提升材料研发效率和产品性能的同时降低实验成本，为化工新材料开发提供了创新方法，具有重要的技术应用价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993197997670469632?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=2F7I1MUzrNolhG67Abm2MTtPPKGMPhkZIi31AdX36lc" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-14">
+                        <div class="card-header">
+                            <div class="card-number">14</div>
+                            <div class="card-title-section">
+                                <div class="card-title">哥本哈根大学开发贝叶斯神经常微分方程框架研究化学品混合物影响</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">哥本哈根大学研究团队提出贝叶斯神经常微分方程框架，用于研究化学品混合物对生物存活的影响。该方法结合毒代动力学和毒效动力学模型与神经网络，提高对非靶标物种风险评估的准确性。在包含99项急性毒性研究的评估中，该框架能够识别和预测混合物行为的非线性偏差，虽然简单线性模型为预测加性混合物效应提供稳健基准，但神经网络组件是识别显著非线性偏差的有力工具，为预测未经测试化学混合物的综合效应提供更负责任框架。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过AI技术提升化学品安全评估的准确性和效率，在保障环境安全和人体健康的同时降低测试成本，为化工产品风险评估提供了创新方法，具有重要的社会价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993190432656003072?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=DVo2OjSvdp0X2CGG-UA1lrZECuux43g4tqRNj-iodFU" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-15">
+                        <div class="card-header">
+                            <div class="card-number">15</div>
+                            <div class="card-title-section">
+                                <div class="card-title">印度利用AI技术推动农业智能化与精准灌溉</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">印度正通过AI技术推动'智能农业革命'，建立以数据为基础的农业系统。土壤湿度传感器结合AI分析可精准控制水泵运行时间，实现节水30-50%、提升产量40-50%。AI驱动的灌溉和农业建议系统显著提升农业效率，区域语言语音和聊天工具帮助农民获取及时信息。'Krishi-Gyan'计划构建开放的农业数字基础设施，整合卫星图像、物联网数据、土壤记录等信息，旨在培训5万名村级农业科学家，提升农民收入并创造农村就业岗位。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该应用通过AI技术实现农业生产的精准化和智能化，在提升资源利用效率的同时保障粮食安全，为农化产品的精准施用提供了技术支撑，具有重要的社会经济价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1993024335566802944?shareuse=1&tenantid=1&expireAt=1765629953&shareSignature=cOPwKNnqwuueIhiG2KH6RrCpKYuVd1G8eemCFDA6knA" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第二部分：全球技术动态 -->
+            <section class="section" id="ai-tech">
+                <div class="section-header">
+                    <h2 class="section-title anchor-offset">全球技术动态</h2>
+                    <p class="section-description">汇聚全球最新AI技术突破，从硬件创新到算法进步，全面解析行业发展趋势</p>
+                </div>
+
+                <!-- 全球技术动态目录 -->
+                <div class="table-of-contents">
+                    <div class="toc-header">
+                        <h3 class="toc-title">📋 资讯目录</h3>
+                        <a href="https://vip.cheminfo.cn/index?tenantid=1" target="_blank" class="toc-link">
+                            进入中国化工信息网查看更多AI+动态
+                        </a>
+                    </div>
+                    <div class="toc-grid">
+                        <a href="#ai-1" class="toc-item"><div class="toc-number">1</div><div class="toc-text">DeepSeek-Math-V2开源模型以金牌成绩征服国际数学奥林匹克</div></a>
+<a href="#ai-2" class="toc-item"><div class="toc-number">2</div><div class="toc-text">谷歌发布Gemini3系列并计划未来4-5年性能提升1000倍</div></a>
+<a href="#ai-3" class="toc-item"><div class="toc-number">3</div><div class="toc-text">OpenAI与Jony Ive合作开发无屏AI设备重新定义用户体验</div></a>
+<a href="#ai-4" class="toc-item"><div class="toc-number">4</div><div class="toc-text">大华股份星汉2.0视觉模型以13GB显存实现规模化商业落地</div></a>
+<a href="#ai-5" class="toc-item"><div class="toc-number">5</div><div class="toc-text">智谱清影2.0实现文本生成1080P视频并自带AI音效</div></a>
+<a href="#ai-6" class="toc-item"><div class="toc-number">6</div><div class="toc-text">青岛发布国内首个全模态实时交互大模型VisualGPT</div></a>
+<a href="#ai-7" class="toc-item"><div class="toc-number">7</div><div class="toc-text">美团WOWService大模型交互系统提升智能客服体验</div></a>
+<a href="#ai-8" class="toc-item"><div class="toc-number">8</div><div class="toc-text">DeepMind发布Gemini 3 Pro系统指令提升Agent任务成功率</div></a>
+<a href="#ai-9" class="toc-item"><div class="toc-number">9</div><div class="toc-text">百度新设两大模型研发部门强化AI技术布局</div></a>
+<a href="#ai-10" class="toc-item"><div class="toc-number">10</div><div class="toc-text">清华大学提出'能力密度'新概念挑战AI模型评估标准</div></a>
+<a href="#ai-11" class="toc-item"><div class="toc-number">11</div><div class="toc-text">北京出台新政最高3000万支持医疗器械产业大模型开发</div></a>
+<a href="#ai-12" class="toc-item"><div class="toc-number">12</div><div class="toc-text">前OpenAI联合创始人Ilya Sutskever指出AI发展瓶颈与未来方向</div></a>
+<a href="#ai-13" class="toc-item"><div class="toc-number">13</div><div class="toc-text">领先AI模型在复杂物理任务中表现不佳仍需人类助力</div></a>
+<a href="#ai-14" class="toc-item"><div class="toc-number">14</div><div class="toc-text">OpenAI与Perplexity进军AI购物挑战垂直领域初创公司</div></a>
+<a href="#ai-15" class="toc-item"><div class="toc-number">15</div><div class="toc-text">无问芯穹获近5亿元A+轮融资加速构建Agentic AI基础设施</div></a>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="news-card" id="ai-1">
+                        <div class="card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title-section">
+                                <div class="card-title">DeepSeek-Math-V2开源模型以金牌成绩征服国际数学奥林匹克</div>
+                                <div class="card-date">2025年11月28日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">DeepSeek发布6850亿参数的混合专家模型DeepSeek-Math-V2，成为全球首个以开源形式达到国际数学奥林匹克金牌水平的数学推理大模型。该模型采用创新的'生成-验证'双模型闭环机制，配备专门验证器对生成器输出的每一步证明进行实时逻辑审查，通过强化学习内化自我修正能力。在2025年IMO中成功解决6道题中的5道，以83.3%正确率获得金牌，位列全球第三。模型以Apache2.0协议完整开源权重和训练细节。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">开创了数学推理AI的新范式，'生成-验证'机制显著提升证明质量，为药物设计、密码学等高可信度场景奠定基础。开源特性推动全球AI研究协作，标志着中国在基础AI研究领域的重要突破，为形式化验证等关键应用提供可靠技术支撑。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23185" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-2">
+                        <div class="card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title-section">
+                                <div class="card-title">谷歌发布Gemini3系列并计划未来4-5年性能提升1000倍</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">谷歌正式推出Gemini3系列AI大模型，被誉为当前最强AI模型。谷歌云AI基础设施负责人Amin Vahdat宣布，计划在未来4-5年内在相同成本和能耗条件下实现算力、存储和网络能力的1000倍提升，并每6个月将算力容量翻倍。为实现这一目标，谷歌推出第七代TPU平台Ironwood，配置192GB HBM内存和7.4TB/s带宽，单芯片性能达4614TFLOPS，是第五代TPU的10倍，每瓦性能提升约6倍。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">标志着AI基础设施进入超指数增长阶段，千倍性能提升目标将大幅降低AI应用门槛。第七代TPU的技术突破为下一代AI模型训练提供强大算力支撑，推动整个行业向更高效率、更低成本方向发展，对AI商业化普及具有里程碑意义。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23008" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-3">
+                        <div class="card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI与Jony Ive合作开发无屏AI设备重新定义用户体验</div>
+                                <div class="card-date">2025年11月25日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI CEO Sam Altman与前苹果首席设计师Jony Ive联合确认正在开发一款'无屏幕'、口袋大小的AI硬件设备。该设备已完成原型机，采用完全取消传统显示屏的设计，依靠语音与上下文感知交互，追求'简约而不简单'的使用体验。Altman形容设备手感'像坐在山间湖畔的小木屋'，旨在终结现代科技带来的数字干扰。设备具备情境智能能力，能够为用户过滤信息并判断何时推送信息，预计将在两年内上市。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">重新定义人机交互范式，从视觉主导转向情境感知的静谧体验，代表后智能手机时代的创新探索。无屏设计挑战传统设备依赖，推动AI从工具向伙伴演进，对消费电子产业格局和用户行为习惯将产生深远影响。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23044" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-4">
+                        <div class="card-header">
+                            <div class="card-number">4</div>
+                            <div class="card-title-section">
+                                <div class="card-title">大华股份星汉2.0视觉模型以13GB显存实现规模化商业落地</div>
+                                <div class="card-date">2025年11月28日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">大华股份将6B视觉模型塞进16GB显存的边缘盒子，同时交出Q3净利润同比增长44%达10.6亿元的成绩单。星汉大模型2.0体系包含V/M/L三条模型枝丫，专攻城市超小目标检测、图文互搜和自然语言调阅。在贵州万峰林景区应用中，观光车调度算法让旺季车辆周转率提升40%，游客排队时间从35分钟降至12分钟；森林防火热成像AI实现秒级预警，年度运维费用节省18%。在交通、电力、矿山、食品安全等领域均实现规模化复制。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">证明了小参数模型在边缘计算场景的商业可行性，打破'模型越大越好'的迷思。通过实际业务场景的深度优化，实现了从技术演示到规模化盈利的关键跨越，为AI产业落地提供了可复制的成功范式。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23168" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-5">
+                        <div class="card-header">
+                            <div class="card-number">5</div>
+                            <div class="card-title-section">
+                                <div class="card-title">智谱清影2.0实现文本生成1080P视频并自带AI音效</div>
+                                <div class="card-date">2025年11月28日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">智谱AI发布清影2.0视频生成模型，支持文本直出1080P高清视频，最长10秒，可控制运动幅度、镜头语言和画面风格。基于自研CogVideoX大模型，支持一次生成多条视频、自由指定镜头推拉摇移，并能导演赛博霓虹、国风水墨等多种风格。同时发布CogSound音效模型，视频生成后自动匹配环境音与动作声，实现'视听一体'的AI创作闭环。清影2.0已嵌入智谱清言App供免费使用，企业版开放API与私有化部署，推理成本再降30%。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">实现文本到视频生成的重大突破，接近OpenAI Sora水平且在中文提示词理解上更优。视听一体化创作闭环降低视频制作门槛，为金融、电商、广告、影视等行业提供高效内容生成工具，推动创意产业数字化转型。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23182" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-6">
+                        <div class="card-header">
+                            <div class="card-number">6</div>
+                            <div class="card-title-section">
+                                <div class="card-title">青岛发布国内首个全模态实时交互大模型VisualGPT</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">青岛虚拟智能体产业大会推出国内首个支持全模态实时交互的视觉语言大模型VisualGPT，实现'所见即所得'的AI体验。用户上传图片/视频后可直接在画面上圈选、标注或语音提问，模型秒级返回结构化答案、可执行代码或3D场景。模型将视觉编码器与流式解码器耦合，实现<300ms端到端延迟，支持1080p60fps实时画面分析与多轮对话。已在教育、医疗、金融三大场景开放SDK，配套提供1000张A100/H100混合算力与10PB多模态数据。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">推动AI交互从'文字对话'迈入'视觉界面即时互动'新阶段，实现真正的多模态无缝体验。低延迟实时交互能力为工业检测、远程医疗、在线教育等场景提供技术基础，打造北方最大AI训练集群的产业布局具有区域发展战略意义。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23025" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-7">
+                        <div class="card-header">
+                            <div class="card-number">7</div>
+                            <div class="card-title-section">
+                                <div class="card-title">美团WOWService大模型交互系统提升智能客服体验</div>
+                                <div class="card-date">2025年11月26日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">美团LongCat团队发布WOWService大模型交互系统，采用'数据+知识双驱动'与四阶段训练体系，在智能客服全量上线。系统通过多智能体协同、强化学习及领域知识增强技术，复杂场景下客服解决率提升9%，用户满意度提升12%，训练标注量仅为传统方案10%。核心框架包括结构化业务规则与真实对话日志联合训练，知识点准确率达96%；多Agent协同机制通过主智能体与多个专用子智能体合作提升系统适应性。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">实现大模型在复杂业务场景的可靠落地，多智能体架构显著提升服务质量和个性化水平。仅需10%标注数据达到传统方案效果，大幅降低AI应用门槛，为本地生活服务领域的AI技术商业化提供成功范例。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23072" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-8">
+                        <div class="card-header">
+                            <div class="card-number">8</div>
+                            <div class="card-title-section">
+                                <div class="card-title">DeepMind发布Gemini 3 Pro系统指令提升Agent任务成功率</div>
+                                <div class="card-date">2025年11月27日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">Google DeepMind公开Gemini3Pro专属System Instructions，在Agentic基准测试中平均成功率提升约5%，多步骤工作流错误率下降8%。指令采用强制前置推理机制，任何工具调用或用户响应前必须完成9步逻辑链验证。核心结构包括显式依赖排序、智能重试策略和持久性检查，确保政策约束>操作顺序>信息前置>用户偏好的优先级。实验结果在WebArena任务成功率由73.2%提升至78.1%，ToolBench多工具链路一次通过率提升6.7%。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">推动大模型可靠性从'黑箱调参'迈向'工程化指令'阶段，为AI智能体的规模化部署提供标准化框架。系统化的推理规划机制显著提升复杂任务完成率，对自动驾驶、机器人控制等安全关键应用具有重要价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23137" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-9">
+                        <div class="card-header">
+                            <div class="card-number">9</div>
+                            <div class="card-title-section">
+                                <div class="card-title">百度新设两大模型研发部门强化AI技术布局</div>
+                                <div class="card-date">2025年11月26日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">百度宣布新设'基础模型研发部'与'应用模型研发部'，均直接向CEO李彦宏汇报。基础模型部由吴甜负责，聚焦高智能、可扩展的通用AGI大模型；应用模型部由贾磊领导，面向业务场景进行专精模型调优与轻量化方案探索。此举紧随文心大模型5.0发布，该模型采用2.4万亿参数+超稀疏MoE架构，原生支持文本、图像、音频、视频统一输入输出。百度将2026年定为'文心生态年'，目标在Q1前推出20+行业大模型、50+场景插件。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">体现企业级AI战略的深度调整，基础与应用分离的研发体系促进技术创新与商业落地的平衡。直接向CEO汇报的组织架构彰显AI核心地位，为国内大模型产业的规范化发展提供组织管理范例。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23110" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-10">
+                        <div class="card-header">
+                            <div class="card-number">10</div>
+                            <div class="card-title-section">
+                                <div class="card-title">清华大学提出'能力密度'新概念挑战AI模型评估标准</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">清华大学在《自然・机器智能》发表研究提出'能力密度'概念，强调评估AI大模型实力时应关注每个参数所展现的智能水平而非单纯参数数量。研究发现过去几年发布的51个开源大模型中，'能力密度'正以指数级速度增长，约每3.5个月翻一番。研究指出提升'能力密度'不能简单依赖模型压缩，需要更先进的'数据+算力+算法'体系打造'高密度'小模型。清华大学已与面壁智能合作推出系列'高密度'模型，成功应用于手机、汽车和智能家居等领域。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">挑战传统的'规模法则'，为AI模型效率优化提供新理论框架。能力密度的指数增长规律揭示模型优化的巨大潜力，推动行业从盲目追求参数规模转向注重智能密度和能效比，对边缘计算和终端AI部署意义重大。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23014" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-11">
+                        <div class="card-header">
+                            <div class="card-number">11</div>
+                            <div class="card-title-section">
+                                <div class="card-title">北京出台新政最高3000万支持医疗器械产业大模型开发</div>
+                                <div class="card-date">2025年11月25日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">北京市经济和信息化局等六部门联合印发《北京市促进医疗器械产业高质量发展若干措施》，通过数据要素流通和AI大模型赋能推动医疗器械产业升级。政策核心举措包括加快推进医疗健康行业高质量数据集建设，完善数据流通政策，支持企业在数据基础制度先行区内搭建数据治理服务平台。鼓励医疗器械企业联合大模型企业共同开发和部署行业大模型，对达到国内一流、国际领先水平的项目按照算力成本给予最高3000万元资金支持。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">开创政府引导AI与传统产业深度融合的新模式，专项资金支持机制加速医疗AI技术落地。数据基础设施与行业大模型并重的政策设计，为其他行业AI应用提供可借鉴的产业发展政策框架，推动生成式AI在专业领域的价值实现。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23051" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-12">
+                        <div class="card-header">
+                            <div class="card-number">12</div>
+                            <div class="card-title-section">
+                                <div class="card-title">前OpenAI联合创始人Ilya Sutskever指出AI发展瓶颈与未来方向</div>
+                                <div class="card-date">2025年11月27日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">前OpenAI联合创始人Ilya Sutskever在访谈中指出当前主流AI发展路线已遇到瓶颈，标志着从扩展时代回归深入研究阶段。他认为从2012-2020年是快速研究阶段，2020-2025年是规模化扩展阶段，现在随着算力增长模型表现未显著提升，扩展与算力浪费界限模糊。他强调大模型在特定评测中表现良好但在实际应用中常犯错，未来AI系统需要考虑情感因素才能更好理解复杂世界。与图灵奖得主杨立昆观点一致，认为当前语言模型技术可能是'死胡同'，'世界模型'将是未来AI主流。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">权威专家对AI发展现状的深刻反思，指出单纯依赖算力和规模扩展的局限性。情感因素和世界模型的提出为下一代AI技术发展指明方向，推动行业从数量扩张转向质量提升的结构性变革。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23130" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-13">
+                        <div class="card-header">
+                            <div class="card-number">13</div>
+                            <div class="card-title-section">
+                                <div class="card-title">领先AI模型在复杂物理任务中表现不佳仍需人类助力</div>
+                                <div class="card-date">2025年11月24日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">全球50多位物理学家联合开发'CritPt'基准测试评估顶尖AI模型处理未公开复杂物理研究问题的能力，模拟早期博士研究生独立研究水平。测试涵盖量子物理、天体物理等11个领域的71个研究挑战，所有问题基于未发表研究内容以防止模型简单猜测。结果显示Gemini3Pro以9.1%准确率名列榜首，GPT-5以4.9%紧随其后。采用'持续解决率'更严格评估标准要求模型在五次尝试中至少四次给出正确答案，所有模型表现均大幅下滑，突显复杂问题推理的脆弱性。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">揭示当前大模型在高级科研任务中的实际局限，为AI能力评估提供更严谨的基准。研究强调AI更适合作为'研究助手'在特定工作流程中提供帮助，而非完全替代人类专家，对AI在科学研究中的合理定位具有重要指导意义。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23021" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-14">
+                        <div class="card-header">
+                            <div class="card-number">14</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI与Perplexity进军AI购物挑战垂直领域初创公司</div>
+                                <div class="card-date">2025年11月26日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI和Perplexity双双宣布推出AI购物功能集成到聊天机器人中，正式进军电子商务市场。OpenAI的ChatGPT支持用户通过文字或图片询问商品推荐，Perplexity强调其聊天机器人的记忆功能能够根据用户已知信息提供量身定制的购物推荐。与Phia、Cherry等垂直AI购物初创公司不同，OpenAI已与Shopify合作，Perplexity与PayPal建立合作，允许用户直接在对话式界面内完成结账。Adobe预测今年假日季AI辅助在线购物将增长520%，但垂直领域初创公司面临巨大竞争压力。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">大模型厂商向垂直应用领域扩张的标志性事件，展现通用AI技术向具体业务场景的渗透能力。直接结账功能改变传统电商流量模式，推动对话式电商新形态发展，对零售业数字化转型产生深远影响。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23092" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-15">
+                        <div class="card-header">
+                            <div class="card-number">15</div>
+                            <div class="card-title-section">
+                                <div class="card-title">无问芯穹获近5亿元A+轮融资加速构建Agentic AI基础设施</div>
+                                <div class="card-date">2025年11月28日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">AI基础设施企业无问芯穹完成近5亿元A+轮融资，由珠海科技集团和孚腾资本联合领投。募集资金将重点投向三大战略方向：巩固软硬协同和多元异构计算技术优势；推动AI云产品与AI终端解决方案的产业规模化应用；大幅加码Agentic AI基础设施研发，构建一流智能体服务平台及配套云、端设施。公司将以构建新一代可学习、可进化的Agentic Infra为战略核心，专注于'生产智能体、协同智能体、服务智能体'，加速智能体在数字世界与物理世界中的规模化落地。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">反映资本市场对Agentic AI基础设施的高度认可，标志AI投资从模型层面向基础设施层延伸。智能体原生基础设施的构建推动AI从工具向自主系统演进，为下一代AI应用生态奠定基础，具有重要产业战略价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AI NEWS</div>
+                            <a href="https://news.aibase.com/zh/news/23181" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">全球AI技术发展与石化行业应用动态跟踪简报</h3>
+            <p class="footer-text">报告时间范围：2025年11月21日 – 2025年11月28日</p>
+            <p class="footer-note">担当 • 前瞻 • 专业</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 卡片动画效果
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 初始化动画
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.news-card').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `opacity 0.6s ease ${index * 0.05}s, transform 0.6s ease ${index * 0.05}s`;
+                observer.observe(card);
+            });
+        });
+
+        // 目录项悬停效果
+        document.querySelectorAll('.toc-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateX(8px)';
+            });
+
+            item.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateX(0)';
+            });
+        });
+
+        // 切换功能
+        function initToggle() {
+            const toggleBtns = document.querySelectorAll('.toggle-btn');
+            const slider = document.querySelector('.toggle-slider');
+            const sections = document.querySelectorAll('.section');
+
+            // 初始化滑块位置
+            updateSliderPosition();
+
+            // 初始状态：只显示石化应用动态
+            showSection('energy-app');
+
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const targetSection = this.dataset.section;
+
+                    // 更新按钮状态
+                    toggleBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // 更新滑块位置
+                    updateSliderPosition();
+
+                    // 切换章节显示
+                    showSection(targetSection);
+                });
+            });
+
+            function updateSliderPosition() {
+                const activeBtn = document.querySelector('.toggle-btn.active');
+                const container = document.querySelector('.toggle-container');
+                const containerRect = container.getBoundingClientRect();
+                const btnRect = activeBtn.getBoundingClientRect();
+
+                const offsetLeft = btnRect.left - containerRect.left - 6;
+                const width = btnRect.width;
+
+                slider.style.transform = `translateX(${offsetLeft}px)`;
+                slider.style.width = `${width}px`;
+            }
+
+            function showSection(targetId) {
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        // 显示目标章节
+                        section.classList.remove('hidden', 'fade-out');
+                        section.classList.add('fade-in');
+
+                        // 滚动到章节标题 - 增加延迟确保章节完全显示
+                        setTimeout(() => {
+                            const sectionHeader = section.querySelector('.section-header');
+                            if (sectionHeader) {
+                                // 确保元素可见后再滚动
+                                requestAnimationFrame(() => {
+                                    // 计算需要的偏移量（切换按钮高度 + 额外间距）
+                                    const toggleContainer = document.querySelector('.section-toggle');
+                                    const toggleHeight = toggleContainer ? toggleContainer.offsetHeight : 0;
+                                    const extraOffset = window.innerWidth <= 768 ? 80 : 120; // 移动端和桌面端不同偏移
+
+                                    const elementTop = sectionHeader.getBoundingClientRect().top + window.pageYOffset;
+                                    const offsetPosition = elementTop - toggleHeight - extraOffset;
+
+                                    window.scrollTo({
+                                        top: offsetPosition,
+                                        behavior: 'smooth'
+                                    });
+                                });
+                            }
+                        }, 400);
+
+                        // 重新触发卡片动画
+                        setTimeout(() => {
+                            const cards = section.querySelectorAll('.news-card');
+                            cards.forEach((card, index) => {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(30px)';
+
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, index * 50);
+                            });
+                        }, 500);
+                    } else {
+                        // 隐藏其他章节
+                        section.classList.add('fade-out');
+                        section.classList.remove('fade-in');
+
+                        setTimeout(() => {
+                            section.classList.add('hidden');
+                        }, 300);
+                    }
+                });
+            }
+
+            // 响应窗口大小变化
+            window.addEventListener('resize', updateSliderPosition);
+        }
+
+        // 添加页面加载完成后的动画
+        window.addEventListener('load', function () {
+            document.body.style.opacity = '1';
+
+            // 初始化切换功能
+            initToggle();
+
+            // 备用方案：确保所有卡片都显示
+            setTimeout(() => {
+                document.querySelectorAll('.news-card').forEach(card => {
+                    if (card.style.opacity === '0') {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
