@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球AI技术发展与石化行业应用动态跟踪简报（2025年11月28日 – 2025年12月05日）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* 现代化头部 */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .hero-author {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            color: #fbbf24;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .hero-author a {
+            color: #fbbf24;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .hero-author a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .hero-author::before {
+            content: '📝';
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            color: #fbbf24;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* 内容区域 */
+        .content-wrapper {
+            background: #f8fafc;
+            min-height: 100vh;
+            padding: 1rem 0;
+        }
+
+        /* 章节样式 */
+        .section {
+            margin-bottom: 6rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 目录样式 */
+        .table-of-contents {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .toc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .toc-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .toc-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #475569;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-item:hover {
+            background: #e2e8f0;
+            border-left-color: #667eea;
+            transform: translateX(4px);
+        }
+
+        .toc-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .toc-text {
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* 卡片网格 */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+        }
+
+        /* 卡片样式 */
+        .news-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .news-card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .card-title-section {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .card-date {
+            font-size: 0.85rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-date::before {
+            content: '📅';
+        }
+
+        .card-content {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section {
+            margin-bottom: 1rem;
+        }
+
+        .content-label {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .content-text {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .source {
+            font-size: 0.85rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .source::before {
+            content: '🔗';
+        }
+
+        .btn-original {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-original:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-original::after {
+            content: '→';
+            transition: transform 0.3s ease;
+        }
+
+        .btn-original:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* 页脚 */
+        .footer {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .section {
+                margin-bottom: 3rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .toc-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .toc-link {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .news-card {
+                padding: 1.5rem;
+            }
+
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .card-number {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .card-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .btn-original {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .news-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .news-card:nth-child(even) {
+            animation-delay: 0.1s;
+        }
+
+        /* 锚点偏移 */
+        .anchor-offset {
+            scroll-margin-top: 2rem;
+        }
+
+        /* 切换按钮样式 */
+        .section-toggle {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            position: sticky;
+            top: 2rem;
+            z-index: 100;
+        }
+
+        .toggle-container {
+            background: white;
+            border-radius: 50px;
+            padding: 6px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toggle-btn {
+            padding: 12px 24px;
+            border: none;
+            background: transparent;
+            color: #64748b;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 44px;
+            position: relative;
+            z-index: 2;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toggle-btn.active {
+            color: white;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            height: calc(100% - 12px);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 44px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+        }
+
+        /* 章节显示/隐藏 */
+        .section {
+            transition: all 0.5s ease;
+        }
+
+        .section.hidden {
+            display: none;
+        }
+
+        .section.fade-out {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .section.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .section-toggle {
+                margin: 2rem 1rem;
+                top: 1rem;
+            }
+
+            .toggle-container {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .toggle-btn {
+                flex: 1;
+                padding: 14px 16px;
+                font-size: 0.9rem;
+                justify-content: center;
+            }
+
+            .toggle-btn span {
+                margin-left: 16px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toggle-btn {
+                padding: 12px 8px;
+                font-size: 0.85rem;
+            }
+
+            .toggle-btn span {
+                margin-left: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">全球AI技术发展与石化行业应用动态跟踪简报</h1>
+            <p class="hero-subtitle">时间范围：2025年11月28日 – 2025年12月05日</p>
+            <p class="hero-author">简报制作：<a href="https://media.cheminfo.cn/" target="_blank">中国化信 • 情报</a></p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">24</span>
+                    <span class="stat-label">重要资讯</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">核心领域</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">天数覆盖</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主内容区域 -->
+    <div class="content-wrapper">
+        <div class="container">
+            <!-- 切换按钮 -->
+            <div class="section-toggle">
+                <div class="toggle-container">
+                    <div class="toggle-slider"></div>
+                    <button class="toggle-btn active" data-section="energy-app">
+                        <span>🛢️ 石化应用动态</span>
+                    </button>
+                    <button class="toggle-btn" data-section="ai-tech">
+                        <span>🧠 全球技术动态</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 第一部分：石化应用动态 -->
+            <section class="section" id="energy-app">
+                <div class="section-header">
+                    <h2 class="section-title anchor-offset">石化应用动态</h2>
+                    <p class="section-description">梳理石化行业 AI 技术应用新动态，洞察技术融合趋势与产业变革方向</p>
+                </div>
+
+                <!-- 石化应用动态目录 -->
+                <div class="table-of-contents">
+                    <div class="toc-header">
+                        <h3 class="toc-title">📋 资讯目录</h3>
+                        <a href="https://vip.cheminfo.cn/index?tenantid=1" target="_blank" class="toc-link">
+                            进入中国化工信息网查看更多AI+动态
+                        </a>
+                    </div>
+                    <div class="toc-grid">
+                        <a href="#energy-1" class="toc-item"><div class="toc-number">1</div><div class="toc-text">机器学习框架优化多孔有机聚合物碳捕获性能</div></a>
+<a href="#energy-2" class="toc-item"><div class="toc-number">2</div><div class="toc-text">AI代理Pixa赋能材料科学研发与数据民主化</div></a>
+<a href="#energy-3" class="toc-item"><div class="toc-number">3</div><div class="toc-text">计算化学与AI驱动下一代催化剂反应机制解析</div></a>
+<a href="#energy-4" class="toc-item"><div class="toc-number">4</div><div class="toc-text">AI融合合成路径设计与动力学模拟以大幅缩减研发工时</div></a>
+<a href="#energy-5" class="toc-item"><div class="toc-number">5</div><div class="toc-text">机器学习模型优化旋转填充床中的二氧化碳捕集工艺</div></a>
+<a href="#energy-6" class="toc-item"><div class="toc-number">6</div><div class="toc-text">AI驱动的CSM-Evo策略开发高效PBAT塑料降解酶</div></a>
+<a href="#energy-7" class="toc-item"><div class="toc-number">7</div><div class="toc-text">物理信息神经网络提升碳纤维复合材料激光加工温度预测精度</div></a>
+<a href="#energy-8" class="toc-item"><div class="toc-number">8</div><div class="toc-text">AI与卫星图像融合的农业管理系统优化施肥与作物管理</div></a>
+<a href="#energy-9" class="toc-item"><div class="toc-number">9</div><div class="toc-text">AI赋能孤儿作物育种的DSAP整合策略保障粮食与生态安全</div></a>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="news-card" id="energy-1">
+                        <div class="card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title-section">
+                                <div class="card-title">机器学习框架优化多孔有机聚合物碳捕获性能</div>
+                                <div class="card-date">2025年12月01日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">沙特王法德石油与矿业大学的研究人员开发了一种机器学习（ML）框架，用于预测和优化多孔有机聚合物（POPs）的二氧化碳吸附能力。该研究基于190条实验数据，构建了包括梯度提升（GB）在内的五种ML模型，其中GB模型预测精度最高（R²=0.963）。研究进一步结合遗传算法（GA）优化材料特性与操作条件，预测在273 K和298 K下的最大CO₂吸附量分别为4.5 mmol/g和3.2 mmol/g。该方法为高性能碳捕获材料的设计与工艺优化提供了高效工具。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该研究将机器学习与遗传算法相结合，实现了对碳捕获材料性能的精准预测与多目标优化，显著加速了新型吸附材料的研发进程。通过识别关键影响因素（压力、温度、表面积），为降低碳捕集技术的能耗与成本提供了数据驱动的决策支持，对推动石油化工行业实现净零排放目标具有重要价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1995719630662578176?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=5q2q1sbCebyyLAQBtMtIK-ckyAe_yDI9cCkPJ-B1Ewk" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-2">
+                        <div class="card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title-section">
+                                <div class="card-title">AI代理Pixa赋能材料科学研发与数据民主化</div>
+                                <div class="card-date">2025年12月04日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">新加坡初创公司Polymarize发布了其集成平台Polymarize Labs中的首个AI代理“Pixa”。Pixa旨在通过自然语言交互，为材料研究者提供包括数据科学、机器学习方法、平台操作指导等在内的全方位支持。其目标是实现“数据与人工智能的民主化”，帮助一线研究人员快速解决日常工作中遇到的数据障碍（如数据不足、偏倚等），并可直接通过自然语言命令执行部分平台功能，从而提升材料研发的效率与自主性。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">Pixa作为行业首个面向材料科学的AI代理，通过自然语言界面降低了AI与数据科学的应用门槛，实现了技术的“民主化”。它能够直接嵌入研发工作流，快速响应具体问题，有望显著缩短新材料（如化工催化剂、高性能聚合物）的发现与优化周期，提升研发投资回报率。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1996550062245351424?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=S4colG0T-8XNL0j7_3B8o2X-kvctj3_LTCKYMNXwVc0" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-3">
+                        <div class="card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title-section">
+                                <div class="card-title">计算化学与AI驱动下一代催化剂反应机制解析</div>
+                                <div class="card-date">2025年12月02日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">日本HPC Systems公司利用高性能计算（HPC）与人工智能技术，在计算化学领域推动化学反应解析研究。该公司在国际会议上展示了关于“下一代催化剂反应机制解析”的成果，通过模拟预测了二维材料MXene中单原子掺杂对催化活性的影响。同时，公司正开发适用于化学反应的机器学习势能（MLP）模型，并对Meta的开源工具“UMA”进行优化以提高反应路径搜索的精度。这些研究均使用了其与北海道大学共同开发的反应路径自动搜索软件GRRM，该软件已在全球300多个机构应用。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">将AI驱动的MLP模型与传统的计算化学模拟深度结合，能够以前所未有的速度和精度探索复杂的催化反应路径与机制。这对于设计高效、低成本的石油化工催化剂（如裂化、加氢催化剂）至关重要，能大幅降低实验试错成本，加速催化剂从实验室到工业应用的进程。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1996025917698932736?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=SOqjJw6pXLt6eorSenBgbniG5pGeUocvUedk-FXu_R8" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-4">
+                        <div class="card-header">
+                            <div class="card-number">4</div>
+                            <div class="card-title-section">
+                                <div class="card-title">AI融合合成路径设计与动力学模拟以大幅缩减研发工时</div>
+                                <div class="card-date">2025年12月02日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">日本TS TechnoCentre公司参与NEDO的“功能性化学品连续精密生产技术开发”项目，负责合成工艺设计技术开发。项目核心是组合使用多个国内开发的合成路径设计系统（SRDS）AI（如AIPHOS、Aist-syn），通过AI提出合成路径，再结合动力学模拟筛选最优路径。同时，公司推进其“TS Motif法”的实用化，利用机器学习预测化合物活化自由能，以降低计算负载。项目目标是将从物质设计到商业化的研发工作量减少至原来的五分之一。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该项目创新性地将多个AI推理系统与物理化学模拟相结合，实现了从分子设计到工艺优化的智能闭环。通过AI快速生成并筛选海量合成路径，再经高精度模拟验证，能极大提升特种化学品、医药中间体等高性能化学品的研发效率，降低研发风险与成本，代表了流程工业研发的数字化前沿。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1996025742943256576?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=8LzUTcjlgsbhnT6faheB8vlxw7WS3q46Elqg9qRyy-I" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-5">
+                        <div class="card-header">
+                            <div class="card-number">5</div>
+                            <div class="card-title-section">
+                                <div class="card-title">机器学习模型优化旋转填充床中的二氧化碳捕集工艺</div>
+                                <div class="card-date">2025年12月02日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">印度帕德玛德亚尔能源大学的研究人员发表研究，探讨基于机器学习的二氧化碳捕集技术。研究对比了速率基模型和两种机器学习模型（DKL-GP和RELM）在预测旋转填充床（RPB）吸收器中混合胺溶剂（PZ/MDEA）对CO₂吸收效率的效果。利用文献实验数据评估显示，两种ML模型预测性能均合适，其中DKL-GP准确性更高（R²=0.99）。研究指出，结合机器学习与传统建模方法，有助于优化碳捕集工艺设计，降低能耗。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该研究将先进的机器学习模型（如DKL-GP）应用于碳捕集单元操作（RPB）的建模与优化，能够更精准地预测复杂气液传质过程的效率，为降低捕集过程的核心能耗提供了智能化工具。对于石油化工、煤化工等排放密集型行业部署经济可行的碳捕集技术具有直接指导意义。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1996067148344786944?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=6YesAY1gLq7C2Ov6mDkO69leiD0elmune_z7Z2wP25A" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-6">
+                        <div class="card-header">
+                            <div class="card-number">6</div>
+                            <div class="card-title-section">
+                                <div class="card-title">AI驱动的CSM-Evo策略开发高效PBAT塑料降解酶</div>
+                                <div class="card-date">2025年12月01日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">湘湖实验室联合浙江大学等机构提出“CSM-Evo”策略，结合共识设计、结构分析与机器学习（EvolvePro模型），成功改造出高效降解PBAT地膜的酶DCTPC_4M_S122H。该酶热稳定性大幅提升（Tm值提升33.9°C），在37-70°C宽温范围内均具高效降解性能，20小时内在室温下可将PBAT地膜降解成粉末，对苯二甲酸（TPA）回收率且纯度达99%以上。该研究为塑料化学回收与循环利用提供了新酶催化路径。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该工作展示了AI在蛋白质工程（酶定向进化）中的强大能力，通过机器学习模型高效探索序列空间，快速获得性能显著提升的工业酶。这为石油基塑料（如聚酯）的酶法降解与单体回收提供了高效、绿色的解决方案，有助于化工行业应对塑料污染并构建循环经济模式。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1995493092130205696?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=hhmVckpgwKZKEXl86C6S1eq-VWEc-_S1clLEN5kmndY" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-7">
+                        <div class="card-header">
+                            <div class="card-number">7</div>
+                            <div class="card-title-section">
+                                <div class="card-title">物理信息神经网络提升碳纤维复合材料激光加工温度预测精度</div>
+                                <div class="card-date">2025年12月01日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">西北核技术研究所针对碳纤维增强聚合物（CFRP）在激光加工中温度控制难题，提出了一种基于物理信息神经网络（PINN）的表面温度预测方法。该方法将热传导物理定律直接嵌入神经网络的损失函数中，克服了传统数值模拟计算量大、纯数据驱动模型依赖海量数据的缺点。通过实验与模拟数据验证，该方法能显著提高激光照射下CFRP表面温度的预测精度，从而为优化激光加工参数、保障材料性能提供了更高效的工具。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">PINN技术巧妙融合了物理机理与数据驱动优势，在少量数据条件下实现了高精度建模，特别适用于石油化工领域中复合材料制造、设备激光修复等复杂物理过程的模拟与优化。这能提升高端化工材料加工的工艺控制水平，减少废品率，保障产品性能一致性。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1995696992825290752?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=0A-4K8AjxFBvhvw1YWAZHryTFzm5HJp5T3mTMLcEOW8" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-8">
+                        <div class="card-header">
+                            <div class="card-number">8</div>
+                            <div class="card-title-section">
+                                <div class="card-title">AI与卫星图像融合的农业管理系统优化施肥与作物管理</div>
+                                <div class="card-date">2025年12月04日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">巴斯夫日本的农业管理系统“扎尔维奥”通过卫星图像和人工智能分析，为农户提供最佳作业时间建议。系统可将农田土壤肥力可视化，用户依据肥力地图调整施肥量。AI通过分析作物品种和天气条件，预测高精度生长阶段，从而指导施肥、施药和收割。在日本新潟的用户交流论坛上，多家农业公司分享了应用经验，如利用该系统实现水稻水直播栽培和无人机可变施肥，并提出了增加水管理警报功能等需求。该系统在当地已拥有约430名用户，覆盖约10100公顷耕地。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该系统将遥感、AI与农艺知识结合，实现了精准农业的落地。虽然直接应用于石油化工生产有限，但其核心的“数据可视化-AI预测-精准执行”模式，对化工园区环境监测、大宗农产品（作为生物化工原料）的供应链优化具有借鉴意义。其AI驱动的决策支持框架可迁移至工业场景。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1996512302285393920?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=9gTNe56V0hTOCjJ0kQv6cqhLi1yKdo6nuD7Iv_QJCXE" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="energy-9">
+                        <div class="card-header">
+                            <div class="card-number">9</div>
+                            <div class="card-title-section">
+                                <div class="card-title">AI赋能孤儿作物育种的DSAP整合策略保障粮食与生态安全</div>
+                                <div class="card-date">2025年12月02日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">中国科学院遗传发育所团队提出AI赋能的DSAP整合生物育种策略，融合从头驯化、快速育种和AI表型组学三类技术，旨在加速耐逆、高营养的孤儿作物（如小米、鹰嘴豆、青稞）的改良与推广。AI表型组学利用智能成像与传感监测，提升种质筛选与品种评价的准确性。该策略预计可将孤儿作物产量提升20%以上，育种周期缩短30%以上，为构建多样化、抗逆性强的农业体系提供系统性解决方案，以应对粮食安全与生态稳定挑战。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该研究展示了AI在农业育种，特别是非主流作物改良中的巨大潜力。对于能源化工行业而言，培育高产、耐逆的能源作物（如用于生物燃料的甘蔗、甜高粱）或工业原料作物，AI驱动的精准育种能缩短研发周期，提高原料供应稳定性与可持续性，间接支持生物化工产业发展。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/1995689415735422976?shareuse=1&tenantid=1&expireAt=1766239060&shareSignature=Cxa4s4YORa3EuEx3H7VmM71XsTlK9sRNH8sU10Nqryo" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第二部分：全球技术动态 -->
+            <section class="section" id="ai-tech">
+                <div class="section-header">
+                    <h2 class="section-title anchor-offset">全球技术动态</h2>
+                    <p class="section-description">汇聚全球最新AI技术突破，从硬件创新到算法进步，全面解析行业发展趋势</p>
+                </div>
+
+                <!-- 全球技术动态目录 -->
+                <div class="table-of-contents">
+                    <div class="toc-header">
+                        <h3 class="toc-title">📋 资讯目录</h3>
+                        <a href="https://vip.cheminfo.cn/index?tenantid=1" target="_blank" class="toc-link">
+                            进入中国化工信息网查看更多AI+动态
+                        </a>
+                    </div>
+                    <div class="toc-grid">
+                        <a href="#ai-1" class="toc-item"><div class="toc-number">1</div><div class="toc-text">智源研究院发布Emu3.5多模态世界模型，实现物理世界统一建模与预测</div></a>
+<a href="#ai-2" class="toc-item"><div class="toc-number">2</div><div class="toc-text">OpenAI收购Neptune强化训练监控栈，加速模型迭代并降低算力浪费</div></a>
+<a href="#ai-3" class="toc-item"><div class="toc-number">3</div><div class="toc-text">国产算力“军团”集结：鹏城实验室发布万卡推理引擎与开源多模态模型</div></a>
+<a href="#ai-4" class="toc-item"><div class="toc-number">4</div><div class="toc-text">OpenAI“企鹅家族”模型矩阵泄露，四档推理预算覆盖云端到边缘全场景</div></a>
+<a href="#ai-5" class="toc-item"><div class="toc-number">5</div><div class="toc-text">法国Mistral发布新模型矩阵，以开放权重多模态模型与小型化模型挑战巨头</div></a>
+<a href="#ai-6" class="toc-item"><div class="toc-number">6</div><div class="toc-text">亚马逊云科技发布Nova2模型系列与智能体“全家桶”，降低企业AI应用门槛</div></a>
+<a href="#ai-7" class="toc-item"><div class="toc-number">7</div><div class="toc-text">OpenAI推出AI“忏悔”框架，以创新训练机制提升模型诚实度与透明度</div></a>
+<a href="#ai-8" class="toc-item"><div class="toc-number">8</div><div class="toc-text">小米AI大模型战略加速，高薪引进人才并设定SOTA目标</div></a>
+<a href="#ai-9" class="toc-item"><div class="toc-number">9</div><div class="toc-text">OpenAI与埃森哲达成战略合作，推动企业级AI规模化部署</div></a>
+<a href="#ai-10" class="toc-item"><div class="toc-number">10</div><div class="toc-text">OpenAI宣布进入“红色警报”状态，暂停非核心业务全力投入产品强化</div></a>
+<a href="#ai-11" class="toc-item"><div class="toc-number">11</div><div class="toc-text">OpenRouter发布100万亿token使用报告，揭示AI模型市场动态与GPT-5.1测试</div></a>
+<a href="#ai-12" class="toc-item"><div class="toc-number">12</div><div class="toc-text">英博云通过K8S原生架构提供普惠算力，降低AI研发门槛</div></a>
+<a href="#ai-13" class="toc-item"><div class="toc-number">13</div><div class="toc-text">硅谷AI人才争夺战升级，“送汤大战”凸显人才战略与公司文化竞争</div></a>
+<a href="#ai-14" class="toc-item"><div class="toc-number">14</div><div class="toc-text">Anthropic与Snowflake达成2亿美元协议，将Claude智能体嵌入企业数据平台</div></a>
+<a href="#ai-15" class="toc-item"><div class="toc-number">15</div><div class="toc-text">OpenAI以技术换股权入股Thrive Holdings，布局AI改造企业服务赛道</div></a>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="news-card" id="ai-1">
+                        <div class="card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title-section">
+                                <div class="card-title">智源研究院发布Emu3.5多模态世界模型，实现物理世界统一建模与预测</div>
+                                <div class="card-date">2025年12月4日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">北京智源人工智能研究院发布新一代多模态大模型Emu3.5，被誉为“真正理解物理世界的AI”。该模型的核心突破在于将所有模态（图像、文本、视频）统一编码为同一种Token序列，并专注于一个任务：NSP（Next State Prediction，预测下一个世界状态）。这使AI从“像素搬运工”进化为“世界模拟器”，能够基于当前状态预测下一秒的合理演化，无论是文字续写、画面生成还是多模态交互。该技术有望应用于机器人具身智能、自动驾驶仿真和长视频生成等高阶场景。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">Emu3.5代表了多模态AI从“生成时代”迈向“世界模型时代”的范式转变。其统一建模方法解决了传统模型缺乏物理常识和因果理解的致命短板，实现了对真实世界运行规则的深度理解。这一原创性突破不仅提升了生成内容的逻辑连贯性，更为AI在物理世界交互和复杂系统模拟中开辟了全新路径，具有深远的行业变革意义。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23353" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-2">
+                        <div class="card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI收购Neptune强化训练监控栈，加速模型迭代并降低算力浪费</div>
+                                <div class="card-date">2025年12月5日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI宣布以全股票形式（估值低于4亿美元）收购波兰AI训练监控初创公司Neptune。这是OpenAI 2025年的第四次收购，旨在将Neptune的“训练指标仪表板”深度整合进其自研训练基础设施。Neptune的工具能“秒级”采集超参数、损失与梯度异常，帮助研究员快速定位训练中的问题。OpenAI计划借此实现每一轮模型迭代的“可追踪、可复盘、可审计”，以缩短下一代GPT模型的实验周期，并降低超大规模集群的调试成本。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">此次收购标志着OpenAI正从“单一模型商”向“全栈AI基础设施”转型。通过补齐训练监控这一关键短板，OpenAI有望系统性提升大模型训练的效率和稳定性，减少因实验不可追溯性导致的算力浪费。这不仅将加速其核心产品的迭代速度，巩固技术领先优势，也为未来向企业客户开放更强大的训练工具链、构建更完整的AI生态奠定了基础。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23400" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-3">
+                        <div class="card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title-section">
+                                <div class="card-title">国产算力“军团”集结：鹏城实验室发布万卡推理引擎与开源多模态模型</div>
+                                <div class="card-date">2025年12月5日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">在2025光明科学城论坛上，鹏城实验室等机构联合发布了四项重要成果，聚焦智能算力与大模型智能体。核心成果包括：国产万卡推理引擎，旨在解决大规模AI推理的算力需求；以及鹏城脑海2.1开源多模态模型及其配套的数据集与工具链。这些成果标志着中国在自主可控的AI算力基础设施和开源大模型生态建设上取得重要进展，旨在降低国内AI研发门槛，推动智能算力的普惠应用。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该系列成果通过自研万卡推理引擎和开源模型生态，直接应对了当前AI发展中算力获取难、成本高的核心痛点。它不仅提升了国产AI基础设施的自主可控能力，还通过开源方式降低了中小企业与科研机构的创新门槛。此举对构建健康的国内AI产业生态、减少对外部算力与模型的依赖具有战略价值，有望推动中国在全球AI竞争中的地位。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23411" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-4">
+                        <div class="card-header">
+                            <div class="card-number">4</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI“企鹅家族”模型矩阵泄露，四档推理预算覆盖云端到边缘全场景</div>
+                                <div class="card-date">2025年12月4日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI内部代号“企鹅”（Penguin）的新模型矩阵信息泄露。该矩阵包含四档推理预算的模型：旗舰Emperor512（推理预算为现行模型8-10倍，或为GPT-5.2核心）、中端Rockhopper64、轻量Macaroni16（面向移动端）以及零推理Mumble0（响应时间<50ms）。此举旨在为开发者提供从延迟、成本到精度的多样化选择，覆盖云端服务器到手机等边缘设备的全场景需求。同时泄露的还有ChatGPT将新增的“记忆搜索”功能。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">OpenAI首次将“推理预算”明码标价并产品化，是AI模型服务精细化、场景化的重要创新。通过提供从零推理到高预算的完整谱系，既能满足企业对高性能模型的需求，又能以极低成本覆盖高频、低延迟的交互场景（如语音助手）。这种分层策略有望大幅降低API使用成本（预估下探30%），并迫使竞争对手跟进，重塑行业定价与服务标准。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23385" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-5">
+                        <div class="card-header">
+                            <div class="card-number">5</div>
+                            <div class="card-title-section">
+                                <div class="card-title">法国Mistral发布新模型矩阵，以开放权重多模态模型与小型化模型挑战巨头</div>
+                                <div class="card-date">2025年12月3日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">法国AI初创公司Mistral发布一系列新模型，旨在与OpenAI、谷歌等全球领先者竞争。其大型模型自称是“世界上最好的开放权重多模态和多语言模型”，具备强大的智能代理功能。同时发布的Ministral 3小型模型专为无人机、汽车、机器人、手机和笔记本电脑等设备设计，强调更低的推理成本、减少的延迟以及针对特定领域的性能优化，可在单个GPU上运行。Mistral已与汇丰银行等企业签署数亿美元合同，加速商业化进程。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">Mistral通过“大型开放模型+小型专用模型”的组合拳，提供了差异化竞争策略。其开放权重策略有助于构建开发者生态，而小型化模型则精准切入了边缘计算和物联网设备这一快速增长的市场，降低了AI部署的门槛和成本。作为欧洲AI的领军者，Mistral的进展挑战了美国在AI领域的绝对主导地位，推动了全球AI格局的多极化发展。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23305" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-6">
+                        <div class="card-header">
+                            <div class="card-number">6</div>
+                            <div class="card-title-section">
+                                <div class="card-title">亚马逊云科技发布Nova2模型系列与智能体“全家桶”，降低企业AI应用门槛</div>
+                                <div class="card-date">2025年12月4日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">在AWS re:Invent 2025大会上，亚马逊云科技推出Nova2模型系列，包括四款在推理和多模态能力上增强的新模型。同时，AWS发布了九项智能体（Agent）新功能，形成“智能体全家桶”，旨在让开发者能够快速部署和管理AI智能体。这些功能全面支持TypeScript并覆盖边缘设备，显著降低了AI智能体的开发与运维门槛，被视为对抗微软-OpenAI的GPTs生态的重要举措。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">亚马逊通过模型升级与工具链强化双管齐下，系统性降低了企业构建和部署AI应用的技术门槛与成本。其智能体“全家桶”提供了从开发到部署的全套解决方案，特别是对TypeScript和边缘设备的支持，迎合了广大开发者的技术栈和实际业务场景。此举将加速AI智能体在企业工作流中的普及，推动云服务商之间的生态竞争进入新阶段。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23348" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-7">
+                        <div class="card-header">
+                            <div class="card-number">7</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI推出AI“忏悔”框架，以创新训练机制提升模型诚实度与透明度</div>
+                                <div class="card-date">2025年12月4日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI宣布正在开发一个名为“忏悔”（Confession）的创新训练框架。该框架旨在训练AI模型能够在其主要回答之后，生成一个二次回应，坦诚承认自身可能做出的不当行为或问题决策（如作弊、违反指令）。评判标准仅基于诚实性，即使承认违规行为也会增加奖励。OpenAI认为这有助于解决模型为追求奖励而做出阿谀奉承或虚假陈述的问题，最终目标是让AI更加透明。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">“忏悔”框架是AI对齐（Alignment）领域一项具有前瞻性的探索。它跳出了传统上基于“帮助性、准确性”的评判体系，首次将“诚实性”作为核心训练目标之一。这种机制有望从根源上减少模型的欺骗性行为，增强人类对AI决策过程的理解和信任，对于构建安全、可靠、可控的AI系统具有重要的伦理和技术价值，可能引领下一代AI安全训练的新范式。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23364" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-8">
+                        <div class="card-header">
+                            <div class="card-number">8</div>
+                            <div class="card-title-section">
+                                <div class="card-title">小米AI大模型战略加速，高薪引进人才并设定SOTA目标</div>
+                                <div class="card-date">2025年12月4日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">小米公司正大力加速其AI大模型战略，以千万元年薪级别的待遇吸引顶尖人才，其中包括来自DeepSeek的核心成员。内部为模型研发设定了三项SOTA（State-of-the-Art）目标：128K上下文长度、数学推理与代码生成能力。长期规划是在三年内打造“AI原生硬件生态”，五年内进入大模型第一梯队，达到与OpenAI、Google Brain相当的水平。这显示了小米从硬件公司向“AI+硬件”生态公司转型的决心。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">小米的激进投入标志着消费电子巨头正深度卷入大模型军备竞赛。其“AI原生硬件生态”的愿景，将大模型能力与庞大的硬件终端（手机、IoT设备）相结合，开辟了区别于纯软件公司的差异化竞争路径。若能成功，将彻底重塑智能设备的交互方式和功能边界，实现从“智能”到“智慧”的跨越，具有巨大的市场潜力和行业影响力。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23407" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-9">
+                        <div class="card-header">
+                            <div class="card-number">9</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI与埃森哲达成战略合作，推动企业级AI规模化部署</div>
+                                <div class="card-date">2025年12月2日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI与全球顶级咨询公司埃森哲达成深度战略合作。埃森哲将为数万名顾问（报道称4万至7万名）配备ChatGPT Enterprise许可证，并共同为企业客户开发行业专用大模型与数据平台。合作覆盖医疗、金融、制造和公共部门，提供从AI战略咨询到模型部署的全流程服务。此举旨在利用OpenAI的技术与埃森哲的行业经验，大规模推动AI在企业数字化转型中的实际应用。消息公布后，埃森哲股价显著上涨。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">此次合作是AI技术厂商与顶级系统集成商的强强联合，为OpenAI打开了通往全球大型企业市场的直接通道。通过埃森哲庞大的顾问网络和行业知识，ChatGPT Enterprise得以快速渗透至各垂直行业的核心业务流程，加速了生成式AI在企业端的商业化落地。这种“技术+咨询”的模式将成为企业级AI市场的主流交付形式，极大地提升了AI技术的行业影响力和普及度。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23258" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-10">
+                        <div class="card-header">
+                            <div class="card-number">10</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI宣布进入“红色警报”状态，暂停非核心业务全力投入产品强化</div>
+                                <div class="card-date">2025年12月2日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI首席执行官萨姆·奥特曼发布内部备忘录，宣布公司因面临谷歌等竞争对手的日益严峻威胁而进入“红色警报”状态。为此，OpenAI将调集所有可用资源，全力投入改进其旗舰产品ChatGPT。作为资源集中的一部分，公司计划推迟包括广告业务在内的多项非核心计划，以确保在快速演进的生成式AI市场中保持领先地位。这标志着OpenAI战略重心的进一步聚焦。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">“红色警报”状态反映了全球AI头部竞争的极端白热化。OpenAI此举是典型的“聚焦核心、all in产品”的竞争策略，旨在以最快速度巩固和扩大其在消费级AI助手市场的领先优势。暂停广告等变现探索，短期可能影响收入，但长期看是通过极致的产品体验构建更深护城河的关键决策，凸显了在技术快速迭代期，速度与专注比短期商业化更为重要。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23281" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-11">
+                        <div class="card-header">
+                            <div class="card-number">11</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenRouter发布100万亿token使用报告，揭示AI模型市场动态与GPT-5.1测试</div>
+                                <div class="card-date">2025年12月4日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">AI模型聚合平台OpenRouter发布了一份基于100万亿token使用数据的匿名报告，揭示了不同AI模型在市场上的实际使用状况、性能偏好和成本效益。报告同时提及，OpenAI疑似正在测试下一代大模型GPT-5.1。该报告为开发者、企业和研究者提供了基于真实世界用量而非基准测试的模型选择参考，反映了AI模型即服务（MaaS）市场的活跃生态和竞争态势。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">OpenRouter的报告提供了前所未有的、基于海量实际使用数据的AI模型市场洞察，使模型评估从“实验室性能”走向“实战价值”。这种数据透明度有助于用户做出更经济的模型选择，并倒逼模型提供商优化性价比。同时，关于GPT-5.1测试的线索也预示着下一代模型竞争的临近，持续推动整个行业的技术迭代速度。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23410" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-12">
+                        <div class="card-header">
+                            <div class="card-number">12</div>
+                            <div class="card-title-section">
+                                <div class="card-title">英博云通过K8S原生架构提供普惠算力，降低AI研发门槛</div>
+                                <div class="card-date">2025年12月3日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">面对大模型时代激增的算力需求与中小企业、科研机构的获取难题，英博云提出了一种基于Kubernetes（K8S）原生架构的算力解决方案。该方案旨在解决本地部署成本高、维护难，以及传统云服务配置复杂、调度不灵活的问题，通过更经济、弹性的云化方式提供AI算力，从而降低AI研发与创新的基础设施门槛。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该方案创新性地将成熟的容器编排技术K8S深度应用于AI算力调度与管理，实现了算力资源的精细化、自动化分配。这显著提升了GPU等昂贵计算资源的利用率，并简化了运维复杂度。对于广大中小型团队而言，这种“普惠算力”模式能够以接近大厂的效率开展AI研发，有助于激发更广泛的创新活力，促进AI技术生态的多元化发展。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23322" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-13">
+                        <div class="card-header">
+                            <div class="card-number">13</div>
+                            <div class="card-title-section">
+                                <div class="card-title">硅谷AI人才争夺战升级，“送汤大战”凸显人才战略与公司文化竞争</div>
+                                <div class="card-date">2025年12月3日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI首席研究员Mark Chen爆料，为争夺顶级AI人才，Meta的招聘团队会亲自将热汤送到候选人门前进行“温情挖角”，而OpenAI则以回赠“自家浓汤”作为回应。这场“送汤大战”背后，是硅谷对稀缺AI人才的激烈争夺。Chen强调，OpenAI留住人才的核心在于员工对公司使命和技术路线的信心，以及公司鼓励探索性研究、敢于投入不确定新范式的文化。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">“送汤大战”表面是趣闻，实则揭示了AI竞争已进入以顶尖人才为核心驱动力的深水区。当技术差距缩小，公司的长期愿景、研究文化和对人才的尊重（“情绪价值”）成为吸引和保留核心人才的关键差异化因素。这表明，构建可持续的AI竞争优势，不仅需要巨额算力和资金，更需要能够激发创造力的组织生态和清晰的战略定力。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23316" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-14">
+                        <div class="card-header">
+                            <div class="card-number">14</div>
+                            <div class="card-title-section">
+                                <div class="card-title">Anthropic与Snowflake达成2亿美元协议，将Claude智能体嵌入企业数据平台</div>
+                                <div class="card-date">2025年12月4日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">AI公司Anthropic与云数据平台Snowflake达成一项价值2亿美元的战略合作协议。根据协议，Snowflake将在其数据云平台中原生集成Anthropic的Claude大模型，预计于2026年第一季度在美欧上线。企业客户可以直接在Snowflake的数据仓库内调用Claude模型进行自然语言查询、报告生成等任务，无需将敏感数据导出到外部系统，从而提升数据安全性和AI应用效率。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">此次合作代表了企业AI应用的一个关键趋势：将大模型能力直接嵌入到企业核心数据环境中。它解决了数据安全、合规和流程整合的核心痛点，使企业能够在保护数据主权的前提下，安全、便捷地利用AI处理和分析自有数据。这种“模型即数据服务”的模式，将极大加速AI在企业决策支持、自动化报告等场景的落地，具有显著的商业价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23377" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="ai-15">
+                        <div class="card-header">
+                            <div class="card-number">15</div>
+                            <div class="card-title-section">
+                                <div class="card-title">OpenAI以技术换股权入股Thrive Holdings，布局AI改造企业服务赛道</div>
+                                <div class="card-date">2025年12月2日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">OpenAI宣布以技术资源换取企业服务公司Thrive Holdings的股权，实现“零现金”交易。OpenAI将通过派驻技术团队、开放模型接口等方式，换取Thrive的股份及未来投资收益。双方合作将首先在会计与IT服务领域展开，旨在利用AI技术改造传统企业服务流程。这是OpenAI构建其AI生态版图、渗透垂直行业企业流程的又一举措。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">这种“技术换股权”的合作模式是OpenAI生态扩张的创新策略。它避免了巨大的现金支出，同时以自身核心技术为杠杆，深度绑定并赋能垂直领域的合作伙伴，共同开拓市场。这使OpenAI能够快速切入会计、IT服务等万亿级的企业服务市场，将其AI能力转化为具体的行业解决方案和可持续的财务回报，构建了良性的商业循环。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">AIBase</div>
+                            <a href="https://news.aibase.com/zh/news/23255" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">全球AI技术发展与石化行业应用动态跟踪简报</h3>
+            <p class="footer-text">报告时间范围：2025年11月28日 – 2025年12月05日</p>
+            <p class="footer-note">担当 • 前瞻 • 专业</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 卡片动画效果
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 初始化动画
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.news-card').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `opacity 0.6s ease ${index * 0.05}s, transform 0.6s ease ${index * 0.05}s`;
+                observer.observe(card);
+            });
+        });
+
+        // 目录项悬停效果
+        document.querySelectorAll('.toc-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateX(8px)';
+            });
+
+            item.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateX(0)';
+            });
+        });
+
+        // 切换功能
+        function initToggle() {
+            const toggleBtns = document.querySelectorAll('.toggle-btn');
+            const slider = document.querySelector('.toggle-slider');
+            const sections = document.querySelectorAll('.section');
+
+            // 初始化滑块位置
+            updateSliderPosition();
+
+            // 初始状态：只显示石化应用动态
+            showSection('energy-app');
+
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const targetSection = this.dataset.section;
+
+                    // 更新按钮状态
+                    toggleBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // 更新滑块位置
+                    updateSliderPosition();
+
+                    // 切换章节显示
+                    showSection(targetSection);
+                });
+            });
+
+            function updateSliderPosition() {
+                const activeBtn = document.querySelector('.toggle-btn.active');
+                const container = document.querySelector('.toggle-container');
+                const containerRect = container.getBoundingClientRect();
+                const btnRect = activeBtn.getBoundingClientRect();
+
+                const offsetLeft = btnRect.left - containerRect.left - 6;
+                const width = btnRect.width;
+
+                slider.style.transform = `translateX(${offsetLeft}px)`;
+                slider.style.width = `${width}px`;
+            }
+
+            function showSection(targetId) {
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        // 显示目标章节
+                        section.classList.remove('hidden', 'fade-out');
+                        section.classList.add('fade-in');
+
+                        // 滚动到章节标题 - 增加延迟确保章节完全显示
+                        setTimeout(() => {
+                            const sectionHeader = section.querySelector('.section-header');
+                            if (sectionHeader) {
+                                // 确保元素可见后再滚动
+                                requestAnimationFrame(() => {
+                                    // 计算需要的偏移量（切换按钮高度 + 额外间距）
+                                    const toggleContainer = document.querySelector('.section-toggle');
+                                    const toggleHeight = toggleContainer ? toggleContainer.offsetHeight : 0;
+                                    const extraOffset = window.innerWidth <= 768 ? 80 : 120; // 移动端和桌面端不同偏移
+
+                                    const elementTop = sectionHeader.getBoundingClientRect().top + window.pageYOffset;
+                                    const offsetPosition = elementTop - toggleHeight - extraOffset;
+
+                                    window.scrollTo({
+                                        top: offsetPosition,
+                                        behavior: 'smooth'
+                                    });
+                                });
+                            }
+                        }, 400);
+
+                        // 重新触发卡片动画
+                        setTimeout(() => {
+                            const cards = section.querySelectorAll('.news-card');
+                            cards.forEach((card, index) => {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(30px)';
+
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, index * 50);
+                            });
+                        }, 500);
+                    } else {
+                        // 隐藏其他章节
+                        section.classList.add('fade-out');
+                        section.classList.remove('fade-in');
+
+                        setTimeout(() => {
+                            section.classList.add('hidden');
+                        }, 300);
+                    }
+                });
+            }
+
+            // 响应窗口大小变化
+            window.addEventListener('resize', updateSliderPosition);
+        }
+
+        // 添加页面加载完成后的动画
+        window.addEventListener('load', function () {
+            document.body.style.opacity = '1';
+
+            // 初始化切换功能
+            initToggle();
+
+            // 备用方案：确保所有卡片都显示
+            setTimeout(() => {
+                document.querySelectorAll('.news-card').forEach(card => {
+                    if (card.style.opacity === '0') {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
