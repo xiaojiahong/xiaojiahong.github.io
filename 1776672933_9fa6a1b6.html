@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球绿氢氨醇技术与产业发展动态跟踪简报（2026年04月14日 – 2026年04月20日）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #0d9488 0%, #059669 50%, #047857 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* 现代化头部 - 绿氢氨醇主题 */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(13, 148, 136, 0.95) 0%, rgba(5, 150, 105, 0.95) 50%, rgba(4, 120, 87, 0.95) 100%);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="molecules" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="2 fill="white" opacity="0.1"/><circle cx="80" cy="80" r="2 fill="white" opacity="0.1"/><circle cx="50" cy="30" r="1 fill="white" opacity="0.08"/><circle cx="30" cy="70" r="1 fill="white" opacity="0.08"/><circle cx="70" cy="40" r="1 fill="white" opacity="0.08"/></pattern></defs><rect width="100" height="100" fill="url(%23molecules)"/></svg>');
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .hero-author {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            color: #6ee7b7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .hero-author a {
+            color: #6ee7b7;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .hero-author a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .hero-author::before {
+            content: '⚡';
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            color: #6ee7b7;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* 内容区域 */
+        .content-wrapper {
+            background: #f0fdfa;
+            min-height: 100vh;
+            padding: 1rem 0;
+        }
+
+        /* 章节样式 */
+        .section {
+            margin-bottom: 6rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #134e4a;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+            border-radius: 2px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #0f766e;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 目录样式 */
+        .table-of-contents {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 20px rgba(13, 148, 136, 0.1);
+            border: 1px solid #ccfbf1;
+        }
+
+        .toc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .toc-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #134e4a;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .toc-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.4);
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            background: #f0fdfa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #0f766e;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .toc-item:hover {
+            background: #ccfbf1;
+            border-left-color: #0d9488;
+            transform: translateX(4px);
+        }
+
+        .toc-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+            color: white;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-right: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .toc-text {
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* 卡片网格 */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+        }
+
+        /* 卡片样式 */
+        .news-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(13, 148, 136, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #ccfbf1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+        }
+
+        .news-card:hover {
+            box-shadow: 0 8px 30px rgba(13, 148, 136, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+            color: white;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .card-title-section {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #134e4a;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .card-date {
+            font-size: 0.85rem;
+            color: #0f766e;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-date::before {
+            content: '📅';
+        }
+
+        .card-content {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section {
+            margin-bottom: 1rem;
+        }
+
+        .content-label {
+            font-weight: 600;
+            color: #0d9488;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .content-text {
+            color: #374151;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #ccfbf1;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .source {
+            font-size: 0.85rem;
+            color: #0f766e;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .source::before {
+            content: '🔗';
+        }
+
+        .btn-original {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-original:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.4);
+        }
+
+        .btn-original::after {
+            content: '→';
+            transition: transform 0.3s ease;
+        }
+
+        .btn-original:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* 页脚 */
+        .footer {
+            background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .section {
+                margin-bottom: 3rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .toc-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .toc-link {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .news-card {
+                padding: 1.5rem;
+            }
+
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .card-number {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .card-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .btn-original {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* 平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .news-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .news-card:nth-child(even) {
+            animation-delay: 0.1s;
+        }
+
+        /* 锚点偏移 */
+        .anchor-offset {
+            scroll-margin-top: 2rem;
+        }
+
+        /* 切换按钮样式 */
+        .section-toggle {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            position: sticky;
+            top: 2rem;
+            z-index: 100;
+        }
+
+        .toggle-container {
+            background: white;
+            border-radius: 50px;
+            padding: 6px;
+            box-shadow: 0 8px 32px rgba(13, 148, 136, 0.15);
+            border: 1px solid #ccfbf1;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toggle-btn {
+            padding: 12px 24px;
+            border: none;
+            background: transparent;
+            color: #0f766e;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 44px;
+            position: relative;
+            z-index: 2;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toggle-btn.active {
+            color: white;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            height: calc(100% - 12px);
+            background: linear-gradient(135deg, #0d9488 0%, #059669 100%);
+            border-radius: 44px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1;
+        }
+
+        /* 章节显示/隐藏 */
+        .section {
+            transition: all 0.5s ease;
+        }
+
+        .section.hidden {
+            display: none;
+        }
+
+        .section.fade-out {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .section.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .section-toggle {
+                margin: 2rem 1rem;
+                top: 1rem;
+            }
+
+            .toggle-container {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .toggle-btn {
+                flex: 1;
+                padding: 14px 16px;
+                font-size: 0.9rem;
+                justify-content: center;
+            }
+
+            .toggle-btn span {
+                margin-left: 16px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .toggle-btn {
+                padding: 12px 8px;
+                font-size: 0.85rem;
+            }
+
+            .toggle-btn span {
+                margin-left: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 英雄区域 -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">全球绿氢氨醇技术与产业发展动态跟踪简报</h1>
+            <p class="hero-subtitle">时间范围：2026年04月14日 – 2026年04月20日</p>
+            <p class="hero-author">简报制作：<a href="https://media.cheminfo.cn/" target="_blank">中国化信 • 绿色能源情报</a></p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">13</span>
+                    <span class="stat-label">重要资讯</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">核心区域</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">天数覆盖</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主内容区域 -->
+    <div class="content-wrapper">
+        <div class="container">
+            <!-- 切换按钮 -->
+            <div class="section-toggle">
+                <div class="toggle-container">
+                    <div class="toggle-slider"></div>
+                    <button class="toggle-btn active" data-section="domestic-tech">
+                        <span>🇨🇳 国内动态</span>
+                    </button>
+                    <button class="toggle-btn" data-section="overseas-tech">
+                        <span>🌍 国外动态</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 第一部分：国内动态 -->
+            <section class="section" id="domestic-tech">
+                <div class="section-header">
+                    <h2 class="section-title anchor-offset">国内动态</h2>
+                    <p class="section-description">关注中国绿氢氨醇产业化进展、政策引领与示范项目，把握本土发展机遇</p>
+                </div>
+
+                <!-- 国内动态目录 -->
+                <div class="table-of-contents">
+                    <div class="toc-header">
+                        <h3 class="toc-title">📋 资讯目录</h3>
+                        <a href="https://vip.cheminfo.cn/index?tenantid=1" target="_blank" class="toc-link">
+                            进入中国化工信息网查看更多国内动态
+                        </a>
+                    </div>
+                    <div class="toc-grid">
+                        <a href="#domestic-1" class="toc-item"><div class="toc-number">1</div><div class="toc-text">中石化220亿元煤制烯烃升级示范项目启动前期策划，耦合绿氢实现低碳目标</div></a>
+<a href="#domestic-2" class="toc-item"><div class="toc-number">2</div><div class="toc-text">华光能源与申汲能源签署绿色甲醇供应协议，助力航运业应对欧盟碳规</div></a>
+<a href="#domestic-3" class="toc-item"><div class="toc-number">3</div><div class="toc-text">山东省发布行动方案，探索打造可再生能源发电与绿电制氢等新技术应用场景</div></a>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="news-card" id="domestic-1">
+                        <div class="card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title-section">
+                                <div class="card-title">中石化220亿元煤制烯烃升级示范项目启动前期策划，耦合绿氢实现低碳目标</div>
+                                <div class="card-date">2026年04月16日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">4月14日，中石化长城能源化工（内蒙古）有限公司召开煤制烯烃升级示范项目前期策划启动会，标志着总投资超220亿元的项目进入全面建设前最后冲刺期。项目位于鄂尔多斯准格尔旗大路产业园区，采用全链条中国石化自主技术，包括SE粉煤半废锅气化、S-COS耐硫变换、S-AGR酸性气体脱除、S-MS甲醇合成及S-MTO烯烃生产技术。规划建设226万吨/年甲醇装置及配套MTO装置，最终产出聚乙烯、聚丙烯及EVA/LDPE等产品。项目配套100MW风电+240MW光伏及1万吨/年电解水制氢，以绿氢替代部分煤制氢。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该项目是国内首个大规模耦合绿氢的煤化工升级示范项目，通过绿电制氢替代部分化石原料，将单位产品碳排放降至5.66吨CO2/吨烯烃的行业领先水平。其全链条自主技术应用，特别是S-AGR技术打破国外垄断，能耗降低18.8%，为传统煤化工绿色转型提供了可复制的技术集成与商业模式。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044824395543429120?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=0dtAfMh2RjVuhdg3TzyFRXBa0myflc8WsJD8NYU8Umo" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="domestic-2">
+                        <div class="card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title-section">
+                                <div class="card-title">华光能源与申汲能源签署绿色甲醇供应协议，助力航运业应对欧盟碳规</div>
+                                <div class="card-date">2026年04月15日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">4月13日，华光能源有限公司与上海申汲能源环境科技有限公司签署绿色甲醇采购与供应协议。根据协议，华光能源将向申汲能源采购符合欧盟可再生能源指令（RED）及ISCC EU认证的绿色甲醇。首批产品计划于2026年上半年完成装船交付。该绿色甲醇原料来自城市垃圾、秸秆、畜禽粪污等生物质资源，其碳减排属性旨在帮助下游航运客户满足欧盟碳税政策及《燃料海运条例》等合规要求。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">此次合作是国内绿色甲醇产业对接国际航运市场需求的关键一步。通过提供符合国际认证的生物质绿色甲醇，为国内航运企业应对欧盟碳边境调节机制（CBAM）和FuelEU Maritime法规提供了合规燃料解决方案，打通了国内绿色甲醇生产与国际航运消纳的通道，具有重要的市场示范效应。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044462008407638016?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=JauERWy9nnTfe2WtAw7pJbY9RFRYO7dGeLEgeJ5V9OI" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="domestic-3">
+                        <div class="card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title-section">
+                                <div class="card-title">山东省发布行动方案，探索打造可再生能源发电与绿电制氢等新技术应用场景</div>
+                                <div class="card-date">2026年04月17日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">4月15日，山东省人民政府印发《关于支持场景培育开放应用推动新质生产力突破发展的行动方案》。方案明确提出，在新能源领域将探索打造可再生能源发电与绿电制氢、多元储能、海上漂浮式风电、钙钛矿电池组件等新技术应用场景，并开展微电网、绿电直连、虚拟电厂、源网荷储一体化等能源电力新场景。该方案旨在推动全省场景资源开放，促进新技术、新业态应用推广。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该方案从省级政策层面，系统性地将“可再生能源发电与绿电制氢”列为重点培育的新技术应用场景，为山东省内风光氢储一体化项目的规划、审批和建设提供了明确的政策指引和支持。此举将有力推动绿氢制备与可再生能源的深度耦合，加速氢能产业链在山东的规模化、场景化发展。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2045065981581803520?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=UW2x0_aFuyk7PIWlDIdtG0ibUiaKKKk-HTJeMxFaLxg" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第二部分：国外动态 -->
+            <section class="section" id="overseas-tech">
+                <div class="section-header">
+                    <h2 class="section-title anchor-offset">国外动态</h2>
+                    <p class="section-description">聚焦海外绿氢、绿氨、绿色甲醇技术突破与大型项目，洞察国际能源转型趋势</p>
+                </div>
+
+                <!-- 国外动态目录 -->
+                <div class="table-of-contents">
+                    <div class="toc-header">
+                        <h3 class="toc-title">📋 资讯目录</h3>
+                        <a href="https://vip.cheminfo.cn/index?tenantid=1" target="_blank" class="toc-link">
+                            进入中国化工信息网查看更多国外动态
+                        </a>
+                    </div>
+                    <div class="toc-grid">
+                        <a href="#overseas-1" class="toc-item"><div class="toc-number">1</div><div class="toc-text">秘鲁阿雷基帕发布2026-2035区域发展计划，目标打造拉美最具雄心的绿氢枢纽</div></a>
+<a href="#overseas-2" class="toc-item"><div class="toc-number">2</div><div class="toc-text">巴西White Martins启用该国首座工业级绿氢工厂，年产能800吨</div></a>
+<a href="#overseas-3" class="toc-item"><div class="toc-number">3</div><div class="toc-text">全球绿氢项目进入成熟期，部分大型项目面临延期或合作伙伴退出</div></a>
+<a href="#overseas-4" class="toc-item"><div class="toc-number">4</div><div class="toc-text">Enagás公布西班牙加泰罗尼亚氢能骨干网络规划，总投资33亿欧元</div></a>
+<a href="#overseas-5" class="toc-item"><div class="toc-number">5</div><div class="toc-text">XCF Global、DevvStream与Southern Energy Renewables合并构建能源转型平台，聚焦SAF与绿色甲醇</div></a>
+<a href="#overseas-6" class="toc-item"><div class="toc-number">6</div><div class="toc-text">印度信实工业出售非核心资产，聚焦清洁能源并签署超30亿美元绿色氨供应协议</div></a>
+<a href="#overseas-7" class="toc-item"><div class="toc-number">7</div><div class="toc-text">巴西总统卢拉提议协助欧盟降低能源成本并推动工业脱碳，强调巴西绿氢潜力</div></a>
+<a href="#overseas-8" class="toc-item"><div class="toc-number">8</div><div class="toc-text">印度与挪威探讨深化能源合作，涵盖绿氢、低碳解决方案及可持续航运</div></a>
+<a href="#overseas-9" class="toc-item"><div class="toc-number">9</div><div class="toc-text">墨西哥国家石油公司升级基础设施布局生物燃料市场，并计划整合绿氢等绿色模块</div></a>
+<a href="#overseas-10" class="toc-item"><div class="toc-number">10</div><div class="toc-text">新西兰与澳大利亚探讨发展绿色氢能尿素以应对化肥供应安全风险</div></a>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="news-card" id="overseas-1">
+                        <div class="card-header">
+                            <div class="card-number">1</div>
+                            <div class="card-title-section">
+                                <div class="card-title">秘鲁阿雷基帕发布2026-2035区域发展计划，目标打造拉美最具雄心的绿氢枢纽</div>
+                                <div class="card-date">2026年04月18日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">秘鲁阿雷基帕地区政府发布2026-2035区域发展计划，旨在将该地区打造为拉丁美洲最具雄心的绿氢枢纽，目标到2035年满足全球5%的清洁燃料需求。战略以高太阳辐射、广阔土地及邻近马塔拉尼等南部港口的优势为依托，重点项目集中在拉霍亚、马塔拉尼等地，涵盖太阳能发电、电解、海水淡化及绿氨出口。首批项目投资超25亿美元，其中Horizonte de Verano超级项目已获批，预计投资超112亿美元。秘鲁氢协会主席指出，挑战在于确保项目在监管框架内落地并实现本地参与。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该计划展现了区域级绿氢产业集群的宏大愿景，通过整合可再生能源、港口物流和绿氨出口，旨在将资源优势转化为产业优势。其5%的全球需求目标极具雄心，若成功实施，将显著提升拉美在全球绿氢版图中的地位，并为其他资源丰富地区提供区域一体化发展的参考模式。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2045715260868608000?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=1a6v1qoLW8VunkFH3nprQ3_ks3RgF1k6R0nXpEJd6eI" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-2">
+                        <div class="card-header">
+                            <div class="card-number">2</div>
+                            <div class="card-title-section">
+                                <div class="card-title">巴西White Martins启用该国首座工业级绿氢工厂，年产能800吨</div>
+                                <div class="card-date">2026年04月16日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">White Martins（林德集团旗下）在巴西雅卡雷伊正式启用其第二座绿氢工厂，这也是巴西首座工业规模的绿氢生产设施。该工厂年产能达800吨，预计创造15个就业岗位。公司通过自产可再生能源（太阳能和风能）降低电力成本，使得绿氢售价与灰氢持平，未收取溢价，旨在推动行业发展。约20%的产量供应给当地玻璃厂，其余供金属、化工及食品企业使用。此举标志着巴西本土绿氢商业化供应迈出关键一步。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该项目是巴西绿氢产业从试点走向工业规模的重要里程碑。其核心创新在于通过可再生能源自产电力实现成本控制，使绿氢价格首次与灰氢持平，证明了在巴西特定条件下绿氢已具备商业竞争力。这为巴西乃至全球绿氢项目提供了“平价绿氢”的本土化示范，对刺激国内需求、建立产业生态具有重要价值。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044779092014481408?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=fPTK5JSbvC8qnbGR5yTXfmNe5BsN6kJza7kYY7aOo7I" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-3">
+                        <div class="card-header">
+                            <div class="card-number">3</div>
+                            <div class="card-title-section">
+                                <div class="card-title">全球绿氢项目进入成熟期，部分大型项目面临延期或合作伙伴退出</div>
+                                <div class="card-date">2026年04月15日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">全球绿氢行业正从2022-2023年的宣布潮转向成熟期。截至2025年底，全球已有510个项目做出最终投资决策，总投资达1100亿美元，预计至2030年可能形成900万至1400万吨/年的产能。然而，实际投产取决于需求，目前全球仅签署约360万吨/年的承购协议。纳米比亚Hyphen项目（年产30万吨绿氢）因环评推迟，投资决策可能延至2027年；澳大利亚AREH项目（年产160万吨绿氢）因BP退出而前景不明；沙特Neom项目（年产120万吨绿氨）预计2025年底投产。行业增长关键在于各国监管清晰度。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该资讯揭示了全球绿氢产业从“规划热”到“落地难”的关键转折点。它凸显了项目成功不仅依赖优质可再生能源资源，更取决于明确的承购需求、稳定的政策环境以及强大的合作伙伴。大型项目的延期和退出为行业提供了理性发展的警示，促使投资者和开发商更加关注项目的经济可行性和市场需求匹配度，推动产业向更务实、更可持续的方向发展。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044356315444887552?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=eEkmV-smULGja6livLZvaPjH2ZmZ8MOBfgEV-86Zwwg" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-4">
+                        <div class="card-header">
+                            <div class="card-number">4</div>
+                            <div class="card-title-section">
+                                <div class="card-title">Enagás公布西班牙加泰罗尼亚氢能骨干网络规划，总投资33亿欧元</div>
+                                <div class="card-date">2026年04月14日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">西班牙天然气网络运营商Enagás在加泰罗尼亚地区启动氢能骨干网络概念计划的公众参与活动。该网络将途经89个市镇，分为埃布罗河谷走廊和莱万特走廊两部分，大部分线路与现有天然气管网并行，并连接巴塞罗那的Enagás再气化厂。公司计划总投资33亿欧元，预计氢能经济将为西班牙创造超过320亿欧元的GDP并支撑约8.1万个就业岗位。此举是Enagás推进全国氢能基础设施建设的组成部分，旨在支持欧洲脱碳和能源自给战略。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该项目是欧洲大规模氢能基础设施建设的典型案例，其创新在于利用现有天然气管道走廊并行建设氢能网络，大幅降低了基础设施的用地和建设成本。通过连接工业中心和港口，该网络旨在激活区域氢能经济，为绿氢的生产、运输和消费提供关键载体。其巨额投资和就业预期彰显了氢能对区域经济的拉动作用，为欧洲其他地区建设氢能骨干网提供了可复制的规划与实施模式。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044009023172931584?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=TZ8zeijyEUnUp9ez-Qc2Ggky_-RodHiJ3sUk6oZ0-R4" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-5">
+                        <div class="card-header">
+                            <div class="card-number">5</div>
+                            <div class="card-title-section">
+                                <div class="card-title">XCF Global、DevvStream与Southern Energy Renewables合并构建能源转型平台，聚焦SAF与绿色甲醇</div>
+                                <div class="card-date">2026年04月14日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">可持续航空燃料公司XCF Global Inc、碳管理公司DevvStream Corp与美国清洁燃料开发商Southern Energy Renewables Inc签署最终业务合并协议，旨在建立联合能源转型平台。该平台将专注于开发并规模化可持续航空燃料（SAF）、绿色甲醇、可再生产品及下一代低碳能源基础设施，同时实现环境属性货币化。合并后业务将连接低碳燃料生产、碳信用、长期采购商业化及基础设施开发，目标实现年燃料相关收入超10亿美元。交易需满足股东批准、融资完成等条件。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">此次合并是一次典型的产业链垂直整合与商业模式创新。它将清洁燃料生产（Southern）、碳信用开发与货币化（DevvStream）以及资本市场运作（XCF）能力相结合，旨在打造一个覆盖燃料生产、环境权益和基础设施的完整价值链。其聚焦SAF和绿色甲醇等高附加值产品，并计划利用小型模块化核反应堆等先进能源系统，展示了通过整合创新技术与管理模式来提升项目经济性和竞争力的新路径。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044107168020066304?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=aVrVbn_0UODGtQUctYYzSBOvis_t3tO9-CIfROSvlZo" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-6">
+                        <div class="card-header">
+                            <div class="card-number">6</div>
+                            <div class="card-title-section">
+                                <div class="card-title">印度信实工业出售非核心资产，聚焦清洁能源并签署超30亿美元绿色氨供应协议</div>
+                                <div class="card-date">2026年04月14日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">印度信实工业（RIL）旗下子公司出售其物业管理服务公司100%股权，获得274亿卢比。此举是RIL优化投资组合、聚焦新能源业务战略的一部分。此前，RIL已与三星C&T签署具有约束力的长期绿色氨供应协议，价值超过30亿美元，期限15年，预计于2029财年下半年开始供应。绿色氨将利用可再生能源衍生的氢气生产。RIL正在同步构建涵盖太阳能组件、电池储能系统和电解槽的清洁能源制造生态系统，以配合其向可持续能源解决方案的转型。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">信实工业的战略调整体现了传统能源巨头向清洁能源转型的清晰路径：剥离非核心资产，集中资源构建从可再生能源装备制造到绿色燃料生产的完整生态。与三星签署的巨额绿色氨长期协议，不仅锁定了未来产品的销路，更标志着绿色氨作为国际贸易大宗商品和氢载体的地位得到产业巨头认可。这种“制造+承购”的一体化模式，为大型企业集团主导能源转型提供了范本。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044076974240591872?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=wuhNv_9jZSVFDJgbqwbHrNvxYCm0g0mWn83vhItzcTA" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-7">
+                        <div class="card-header">
+                            <div class="card-number">7</div>
+                            <div class="card-title-section">
+                                <div class="card-title">巴西总统卢拉提议协助欧盟降低能源成本并推动工业脱碳，强调巴西绿氢潜力</div>
+                                <div class="card-date">2026年04月19日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">巴西总统卢拉·达席尔瓦在汉诺威工业博览会开幕式上表示，巴西可协助欧盟降低能源成本并推动工业脱碳。他强调，欧盟法规应考量巴西生产过程中的清洁能源组合。巴西拥有90%的清洁电力来源，且具备生产全球最廉价绿氢的潜力。此外，卢拉指出欧盟与南方共同市场贸易协定将于5月1日临时生效，双方将加强合作以应对单边主义，促进跨大西洋贸易与投资。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">卢拉的发言将巴西定位为欧洲工业脱碳的潜在能源合作伙伴，核心卖点是其低廉的可再生能源成本和由此衍生的绿氢成本优势。这不仅是能源外交，更是为巴西绿氢产业寻求稳定的国际出口市场。通过将绿氢贸易与欧盟-南方共同市场贸易协定挂钩，旨在为未来清洁能源和衍生品（如绿氨）的贸易扫清政策障碍，推动巴西从资源禀赋优势向产业出口优势转化。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2046077648717471744?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=UcplIdriS0CczbrSdb6nfLUxtY5pN9VZ4hfCF-_Omss" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-8">
+                        <div class="card-header">
+                            <div class="card-number">8</div>
+                            <div class="card-title-section">
+                                <div class="card-title">印度与挪威探讨深化能源合作，涵盖绿氢、低碳解决方案及可持续航运</div>
+                                <div class="card-date">2026年04月18日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">印度与挪威在贸易与投资对话第三轮会议期间，探讨了在能源、海事等领域的部门合作，具体涵盖油气、海上技术、可再生能源、绿氢、低碳解决方案、港口运营数字化及可持续航运实践。挪威通过全球政府养老基金和Norfund表达了对印度可再生能源项目的投资兴趣。双方讨论了消除贸易和投资壁垒的必要性，以充分利用去年10月实施的《贸易与经济伙伴关系协定》（TEPA），涉及卫生与植物检疫措施、产品认证、监管框架等问题。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">此次对话将绿氢和可持续航运等新兴领域纳入传统能源合作框架，标志着双边合作向深度脱碳方向拓展。挪威作为海上技术和航运强国，与印度巨大的能源需求和制造潜力形成互补。通过TEPA协定下的机制化磋商，旨在为绿氢、氨燃料等低碳技术及产品的贸易与投资扫清非关税壁垒，为两国在绿色海事走廊、绿氢供应链等具体项目上的合作铺平道路。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2045413273794985984?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=ns5jPZxKg3ZrOd6ZzYMCwzXcAJ8K-zcIWsRexPOtK7I" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-9">
+                        <div class="card-header">
+                            <div class="card-number">9</div>
+                            <div class="card-title-section">
+                                <div class="card-title">墨西哥国家石油公司升级基础设施布局生物燃料市场，并计划整合绿氢等绿色模块</div>
+                                <div class="card-date">2026年04月16日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">墨西哥国家石油公司（Pemex）宣布正升级基础设施以布局生物燃料市场。公司战略包括在炼油厂增加绿色模块，涵盖太阳能、风能、地热和绿氢，旨在降低工艺碳强度并生成碳信用。Pemex凭借现有加氢处理基础设施、技术专长及国内需求具备竞争优势。公司同时指出，生物能源项目的成功取决于原材料（如废食用油）的邻近性及拥有保证低碳足迹的国际认证。拉丁美洲和加勒比地区目前生产全球27%的生物燃料，生物柴油过去十年增长387%。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">Pemex的战略展示了传统石油公司向综合能源公司转型的一种路径：利用现有炼油基础设施和加氢处理技术，开发生物燃料，并逐步引入绿氢等零碳能源进行工艺脱碳。这种“棕地改造”模式降低了转型成本，实现了资产的渐进式升级。将绿氢作为炼厂脱碳的“绿色模块”，为绿氢在传统工业领域的早期应用提供了具体场景，有助于培育初始市场需求。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2044673396023443456?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=TKM234uEYRF0ds6-DI2T6xKqJQSMDmCzSBYlvEJ-8h4" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+<div class="news-card" id="overseas-10">
+                        <div class="card-header">
+                            <div class="card-number">10</div>
+                            <div class="card-title-section">
+                                <div class="card-title">新西兰与澳大利亚探讨发展绿色氢能尿素以应对化肥供应安全风险</div>
+                                <div class="card-date">2026年04月20日</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="content-section">
+                                <div class="content-label">核心内容</div>
+                                <div class="content-text">中东战争及中国化肥出口限制暴露了新西兰和澳大利亚农业对进口化肥的依赖风险。为应对化肥供应中断，两国探讨发展生物化肥和绿色氢能尿素。其中，新西兰政府与行业合作的Kapuni项目计划于2027年启动，结合风能、可再生能源和绿色氢能生产，以生产更环保的氮肥并降低排放。该举措旨在减少对全球化肥供应链的依赖，提升粮食安全。国际机构警告，化肥市场中断可能导致粮食价格大幅通胀。</div>
+                            </div>
+                            <div class="content-section">
+                                <div class="content-label">创新性与价值点</div>
+                                <div class="content-text">该资讯将绿氢/绿氨的生产与粮食安全这一核心国家战略议题直接挂钩，赋予了绿氨产业超越能源转型的更深层意义。Kapuni项目展示了将本地可再生能源转化为农业必需品（尿素）的闭环模式，不仅能降低碳排放，更能增强国家在关键物资上的自给能力和抗风险能力。这为绿氨产业开辟了“能源安全+粮食安全”的双重价值叙事，可能吸引更广泛的政策和资金支持。</div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="source">中国化工信息网</div>
+                            <a href="https://vip.cheminfo.cn/news/details/2045926653773430784?shareuse=1&tenantid=1&expireAt=1777968297&shareSignature=y2Si6pdf98Tw8qX4-ViRjl8KOLaKE6gXXihGRbtV4iQ" target="_blank" class="btn-original">查看原文</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">全球绿氢氨醇技术与产业发展动态跟踪简报</h3>
+            <p class="footer-text">报告时间范围：2026年04月14日 – 2026年04月20日</p>
+            <p class="footer-note">担当 • 前瞻 • 专业</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 卡片动画效果
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // 初始化动画
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.news-card').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `opacity 0.6s ease ${index * 0.05}s, transform 0.6s ease ${index * 0.05}s`;
+                observer.observe(card);
+            });
+        });
+
+        // 目录项悬停效果
+        document.querySelectorAll('.toc-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateX(8px)';
+            });
+
+            item.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateX(0)';
+            });
+        });
+
+        // 切换功能
+        function initToggle() {
+            const toggleBtns = document.querySelectorAll('.toggle-btn');
+            const slider = document.querySelector('.toggle-slider');
+            const sections = document.querySelectorAll('.section');
+
+            // 初始化滑块位置
+            updateSliderPosition();
+
+            // 初始状态：只显示国内动态
+            showSection('domestic-tech');
+
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const targetSection = this.dataset.section;
+
+                    // 更新按钮状态
+                    toggleBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // 更新滑块位置
+                    updateSliderPosition();
+
+                    // 切换章节显示
+                    showSection(targetSection);
+                });
+            });
+
+            function updateSliderPosition() {
+                const activeBtn = document.querySelector('.toggle-btn.active');
+                const container = document.querySelector('.toggle-container');
+                const containerRect = container.getBoundingClientRect();
+                const btnRect = activeBtn.getBoundingClientRect();
+
+                const offsetLeft = btnRect.left - containerRect.left - 6;
+                const width = btnRect.width;
+
+                slider.style.transform = `translateX(${offsetLeft}px)`;
+                slider.style.width = `${width}px`;
+            }
+
+            function showSection(targetId) {
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        // 显示目标章节
+                        section.classList.remove('hidden', 'fade-out');
+                        section.classList.add('fade-in');
+
+                        // 滚动到章节标题 - 增加延迟确保章节完全显示
+                        setTimeout(() => {
+                            const sectionHeader = section.querySelector('.section-header');
+                            if (sectionHeader) {
+                                // 确保元素可见后再滚动
+                                requestAnimationFrame(() => {
+                                    // 计算需要的偏移量（切换按钮高度 + 额外间距）
+                                    const toggleContainer = document.querySelector('.section-toggle');
+                                    const toggleHeight = toggleContainer ? toggleContainer.offsetHeight : 0;
+                                    const extraOffset = window.innerWidth <= 768 ? 80 : 120; // 移动端和桌面端不同偏移
+
+                                    const elementTop = sectionHeader.getBoundingClientRect().top + window.pageYOffset;
+                                    const offsetPosition = elementTop - toggleHeight - extraOffset;
+
+                                    window.scrollTo({
+                                        top: offsetPosition,
+                                        behavior: 'smooth'
+                                    });
+                                });
+                            }
+                        }, 400);
+
+                        // 重新触发卡片动画
+                        setTimeout(() => {
+                            const cards = section.querySelectorAll('.news-card');
+                            cards.forEach((card, index) => {
+                                card.style.opacity = '0';
+                                card.style.transform = 'translateY(30px)';
+
+                                setTimeout(() => {
+                                    card.style.opacity = '1';
+                                    card.style.transform = 'translateY(0)';
+                                }, index * 50);
+                            });
+                        }, 500);
+                    } else {
+                        // 隐藏其他章节
+                        section.classList.add('fade-out');
+                        section.classList.remove('fade-in');
+
+                        setTimeout(() => {
+                            section.classList.add('hidden');
+                        }, 300);
+                    }
+                });
+            }
+
+            // 响应窗口大小变化
+            window.addEventListener('resize', updateSliderPosition);
+        }
+
+        // 添加页面加载完成后的动画
+        window.addEventListener('load', function () {
+            document.body.style.opacity = '1';
+
+            // 初始化切换功能
+            initToggle();
+
+            // 备用方案：确保所有卡片都显示
+            setTimeout(() => {
+                document.querySelectorAll('.news-card').forEach(card => {
+                    if (card.style.opacity === '0') {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
