@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>农药行业一周动态监测报告</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:28px 16px 48px;color:#1e293b;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;line-height:1.7;background:#edf2f8}
+button,input,select,textarea{font:inherit}
+.report{max-width:1100px;margin:auto;overflow:hidden;background:#fff;border:1px solid #dbe3ee;border-radius:18px;box-shadow:0 20px 55px rgba(15,23,42,.1)}
+header{position:relative;padding:40px 44px;color:#fff;background:linear-gradient(125deg,#07142f,#15346d 60%,#2563eb)}
+header:after{position:absolute;right:-90px;bottom:-180px;width:340px;height:340px;content:"";border-radius:50%;background:rgba(255,255,255,.07)}
+.header-inner{position:relative;z-index:1}.type{font-size:12px;font-weight:700;letter-spacing:1.5px;opacity:.75}
+h1{margin:9px 0 16px;font-size:32px;line-height:1.35}.meta{display:flex;flex-wrap:wrap;gap:7px 22px;font-size:13px;opacity:.84}
+main{padding:34px 44px 44px}.summary{padding:23px 25px;background:linear-gradient(135deg,#f8fbff,#eff6ff);border:1px solid #d7e8ff;border-left:5px solid #2563eb;border-radius:12px}
+.eyebrow{margin-bottom:7px;color:#2563eb;font-size:12px;font-weight:700;letter-spacing:1.3px}.summary-text{color:#0f172a;font-size:16px;font-weight:650}.summary ul{margin:12px 0 0;padding-left:20px;color:#475569;font-size:14px}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin-top:23px}.metric{min-height:106px;padding:17px;border:1px solid #e2e8f0;border-radius:12px}.metric small{color:#64748b}.metric strong{display:block;margin-top:6px;color:#10224f;font-size:19px;line-height:1.45}.metric p{margin:4px 0 0;color:#94a3b8;font-size:11px}
+section{margin-top:36px}.section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:17px;padding-bottom:10px;border-bottom:1px solid #e2e8f0}.section-title>div{display:flex;align-items:center;gap:10px}.section-title i{width:6px;height:25px;border-radius:5px;background:linear-gradient(#3b82f6,#10224f)}.section-title h2{margin:0;color:#10224f;font-size:21px}.section-title small{color:#94a3b8}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.card{padding:19px;border:1px solid #e2e8f0;border-radius:13px}.signal{background:#f8fafc}.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:11px}.card h3{margin:0;color:#10224f;font-size:16px}.conclusion{color:#334155;font-size:14px;font-weight:650}.evidence{margin-top:9px;color:#64748b;font-size:13px}.evidence b{display:block;margin-bottom:2px;color:#94a3b8;font-size:11px}
+.events,.watch{margin:0;padding:0;list-style:none}.event{position:relative;margin-bottom:15px;padding:20px 22px 18px 26px;border:1px solid #e2e8f0;border-radius:13px}.event:before{position:absolute;top:0;left:0;width:5px;height:100%;content:"";background:linear-gradient(#3b82f6,#10224f)}.event-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}.event h3{margin:4px 0 0;color:#0f172a;font-size:17px}.event time{flex-shrink:0;color:#94a3b8;font-size:12px}.tags span{display:inline-block;margin:0 5px 3px 0;padding:2px 8px;color:#2563eb;font-size:11px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:14px}.location{margin-top:3px;color:#64748b;font-size:12px}.row{display:grid;grid-template-columns:72px 1fr;gap:9px;margin-top:12px;font-size:14px}.row b{color:#475569}.row p{margin:0;color:#64748b}.event-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:9px;margin-top:13px;padding-top:11px;color:#64748b;font-size:12px;border-top:1px dashed #e2e8f0}.links{display:flex;flex-wrap:wrap;gap:5px}.links a{padding:3px 8px;color:#2563eb;text-decoration:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:5px}
+.interaction-block{margin-top:14px;padding-top:14px;border-top:1px solid #edf2f7}.interaction-actions{display:flex;flex-wrap:wrap;gap:9px}.interaction-button{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;color:#334155;background:#fff;border:1px solid #cbd5e1;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer;transition:.15s}.interaction-button:hover{border-color:#93c5fd;background:#f8fbff}.interaction-button.recommended{color:#1d4ed8;border-color:#93c5fd;background:#eff6ff}.interaction-button:disabled,.comment-submit-button:disabled{cursor:not-allowed;opacity:.6}.button-count{min-width:22px;padding:1px 6px;color:#64748b;background:#f1f5f9;border-radius:12px;text-align:center;font-size:11px}.recommended .button-count{color:#1d4ed8;background:#dbeafe}
+.comment-panel{margin-top:12px;padding:15px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:11px}.comment-tip{margin-bottom:10px;color:#64748b;font-size:12px}.comment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.comment-panel label{display:block;color:#475569;font-size:12px;font-weight:700}.comment-panel input,.comment-panel select,.comment-panel textarea{width:100%;margin-top:5px;padding:9px 10px;color:#1e293b;background:#fff;border:1px solid #cbd5e1;border-radius:7px;outline:none}.comment-panel input:focus,.comment-panel select:focus,.comment-panel textarea:focus{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(59,130,246,.12)}.comment-text-label{margin-top:10px}.comment-panel textarea{min-height:88px;resize:vertical}.comment-submit-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}.comment-message{color:#64748b;font-size:12px}.comment-message.success{color:#047857}.comment-message.error{color:#b91c1c}.comment-submit-button{padding:8px 15px;color:#fff;background:#2563eb;border:0;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer}.feedback-disabled .interaction-block{display:none}
+.watch{display:grid;gap:9px}.watch>li:not(.empty){padding:12px 15px;color:#475569;background:#fffbeb;border:1px solid #fde7bd;border-radius:9px}.empty{padding:24px;color:#94a3b8;text-align:center;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:10px}.footer{margin-top:38px;padding-top:17px;color:#94a3b8;font-size:12px;text-align:center;border-top:1px solid #e2e8f0}
+@media(max-width:760px){.comment-grid{grid-template-columns:1fr}}
+@media(max-width:680px){body{padding:0;background:#fff}.report{border:0;border-radius:0;box-shadow:none}header,main{padding:27px 20px}h1{font-size:26px}.section-title,.event-head,.event-foot{align-items:flex-start;flex-direction:column}.row{grid-template-columns:1fr;gap:2px}.comment-submit-row{align-items:stretch;flex-direction:column}.comment-submit-button{width:100%}}
+@media print{body{padding:0;background:#fff}.report{max-width:none;border:0;box-shadow:none}.metric,.card,.event{break-inside:avoid}.interaction-block{display:none!important}}
+</style>
+</head>
+<body>
+<div class="report">
+<header><div class="header-inner"><div class="type">周度 · 行业动态与趋势</div><h1>农药行业一周动态监测报告</h1><div class="meta"><span>报告主题：农药市场供需与价格动态</span><span>统计周期：2026-07-09 至 2026-07-15</span><span>生成日期：2026-07-16</span><span>数据来源：中国化工信息网MCP智能检索</span></div></div></header>
+<main>
+<div class="summary"><div class="eyebrow">EXECUTIVE SUMMARY · 核心摘要</div><div class="summary-text">基于现有检索资料，未能获取2026年7月9日至15日的具体农药市场资讯。现有最新有效资讯截至2026年6月22日。根据该时段数据，农药市场在6月下旬春夏用药旺季结束后，全面进入传统淡季，行情呈现弱势下行、成交冷清及严重分化的特征。草铵膦因供需偏紧成为唯一抗跌品种，草甘膦受成本支撑底部坚挺，杀虫剂板块全线阴跌，杀菌剂窄幅震荡。后续需关注7月下旬晚稻及蔬菜防虫需求启动情况。</div><ul><li>市场进入传统淡季，国内小麦收割完毕，大田集中用药周期结束，渠道以去库存和回笼资金为主。</li><li>外贸支撑缺位，南美采购旺季落幕，东南亚补货放缓，出口订单大幅缩减。</li><li>草铵膦（95%）稳居5.0万元/吨高位，成为市场唯一强势品种；草甘膦（95%）现货2.85万元/吨，底部稳固。</li><li>杀虫剂板块交投极度冷清，阿维菌素、吡虫啉等主流品种报价松动，低价货源充斥市场。</li><li>杀菌剂行情平稳，受雨季未至影响，市场仅靠刚需补货支撑，主流品种价格维稳。</li></ul></div>
+<div class="metrics"><div class="metric"><small>中农立华原药价格指数</small><strong>75.85点</strong><p>截至2026年6月22日，环比大幅回落8.68%</p></div><div class="metric"><small>草铵膦原药报价</small><strong>5.0万元/吨</strong><p>市场唯一抗跌品种，供需格局偏紧</p></div><div class="metric"><small>草甘膦原药现货</small><strong>2.85万元/吨</strong><p>受黄磷等原料成本支撑，价格底部稳固</p></div><div class="metric"><small>原文来源</small><strong>3</strong><p>最终入选事件去重后的原文数量</p></div></div>
+<section><div class="section-title"><div><i></i><h2>核心洞察</h2></div><small>根据报告视角动态选择分析维度</small></div><div class="card-grid"><article class="card insight"><div class="card-head"><h3>市场与主体格局</h3></div><div class="conclusion">农药市场全面进入传统淡季，呈现“工厂挺价、渠道砸价”的博弈格局，整体行情弱势下行。</div><div class="evidence"><b>判断依据</b>6月下旬春夏用药旺季收尾，全国小麦收割完毕，大田集中用药周期结束；渠道经销商、零售商以去库存、回现金流为核心，低价现货持续冲击市场。</div></article><article class="card insight"><div class="card-head"><h3>价格变化与主要原因</h3></div><div class="conclusion">市场品类严重分化，草铵膦强势抗跌，草甘膦底部坚挺，杀虫剂全线阴跌。</div><div class="evidence"><b>判断依据</b>草铵膦依托海外锁单充足、农田抗性杂草替代需求增长及新增产能受限，供需偏紧；草甘膦受黄磷等高位原料支撑；杀虫剂因南方早稻防虫作业收尾，市场进入需求空窗期。</div></article><article class="card insight"><div class="card-head"><h3>供给与库存变化</h3></div><div class="conclusion">国内需求断层，外贸支撑缺位，渠道库存承压，行业负反馈效应凸显。</div><div class="evidence"><b>判断依据</b>制剂企业仅做刚需小单补货，无囤货意愿；南美海外采购旺季落幕，东南亚补货节奏放缓；上半年渠道备货充足，现阶段集中抛货。</div></article></div></section>
+<section><div class="section-title"><div><i></i><h2>关键信号</h2></div><small>根据有效资料动态归类</small></div><div class="card-grid"><article class="card signal"><div class="card-head"><h3>草铵膦供需偏紧信号</h3></div><div class="conclusion">草铵膦价格持续高位，具备抗跌属性，后续可能继续领涨。</div><div class="evidence"><b>判断依据</b>依托海外锁单充足、农田抗性杂草替代需求增长、新增产能受限等利好，供需格局偏紧，整体易涨难跌。</div></article><article class="card signal"><div class="card-head"><h3>杀虫剂需求空窗期信号</h3></div><div class="conclusion">杀虫剂板块将持续阴跌，直至7月下旬晚稻、蔬菜防虫需求启动方可企稳。</div><div class="evidence"><b>判断依据</b>南方早稻防虫作业收尾，蔬菜、果树新一轮防虫需求尚未启动，市场进入需求空窗期，阿维菌素、吡虫啉等主流品种报价普遍松动。</div></article></div></section>
+<section><div class="section-title"><div><i></i><h2>重点动态</h2></div><small>可查看原文、推荐关注并提交评论</small></div><ul class="events"><li class="event" data-event-id="evt_1aj6gn1"><div class="event-head"><div><div class="tags"><span>价格变化</span><span>供需变化</span></div><h3>农药旺季退潮整体走弱，草铵膦成唯一抗跌品种</h3><div class="location">中国</div></div><time>2026-06-22</time></div><div class="row"><b>事实摘要</b><p>6月下旬国内农药春夏用药旺季正式收尾，市场全面进入传统淡季。中农立华原药价格指数报75.85点，环比大幅回落8.68%。草铵膦（95%）稳居5.0万元/吨高位，成为市场唯一强势品种；草甘膦（95%）现货2.85万元/吨，受黄磷等高位原料支撑，价格底部稳固。杀虫剂板块全线阴跌，杀菌剂窄幅震荡。</p></div><div class="row"><b>直接影响</b><p>市场呈现弱势下行、成交冷清、品类严重分化特征，渠道去库存压力增大，生产企业面临挺价与出货的两难局面。</p></div><div class="event-foot"><span>资料来源</span><div class="links"><a href="https://vip.cheminfo.cn/news/details/2069255379692949504" target="_blank" rel="noopener noreferrer">查看原文</a></div></div><div class="interaction-block"><div class="interaction-actions"><button class="interaction-button recommend-button" type="button" data-action="recommend"><span class="button-label">推荐关注</span><span class="button-count recommend-count">0</span></button><button class="interaction-button comment-toggle-button" type="button" data-action="comment-toggle"><span>添加评论</span><span class="button-count comment-count">0</span></button></div><div class="comment-panel" hidden><div class="comment-tip">评论仅供报告管理人员查看，不会直接公开展示。</div><div class="comment-grid"><label>评论类型<select class="comment-type"><option value="information">补充信息</option><option value="question">提出疑问</option><option value="risk">风险提示</option><option value="suggestion">行动建议</option></select></label><label>姓名（可选）<input class="comment-name" maxlength="30" placeholder="您的姓名"></label><label>单位或部门（可选）<input class="comment-organization" maxlength="50" placeholder="单位或部门"></label></div><label class="comment-text-label">评论内容<textarea class="comment-text" maxlength="500" placeholder="请输入补充信息、问题、风险或行动建议"></textarea></label><div class="comment-submit-row"><span class="comment-message" role="status"></span><button class="comment-submit-button" type="button">提交评论</button></div></div></div></li><li class="event" data-event-id="evt_165ucz4"><div class="event-head"><div><div class="tags"><span>价格变化</span><span>市场动态</span></div><h3>中农立华发布2026年6月7日原药市场行情及价格指数</h3><div class="location">中国</div></div><time>2026-06-08</time></div><div class="row"><b>事实摘要</b><p>2026年6月7日，中农立华原药价格指数报77.54点，同比去年上涨4.45%，环比上月下跌7.88%。除草剂原药价格指数报89.25点，同比去年上涨10.18%。草甘膦原药95%含量报3万元/吨，97%含量报3.05万元/吨；草铵膦原药价格上涨，报价5万元/吨以上。杀虫剂原药价格指数报69.29点，同比去年上涨0.60%。</p></div><div class="row"><b>直接影响</b><p>市场迈入终端集中用药旺季，渠道库存优化，但生产厂商成本压力持续走高，后续需持续跟踪渠道库存消化进度与原料成本波动。</p></div><div class="event-foot"><span>资料来源</span><div class="links"><a href="https://vip.cheminfo.cn/news/details/2072056335195430912" target="_blank" rel="noopener noreferrer">查看原文</a></div></div><div class="interaction-block"><div class="interaction-actions"><button class="interaction-button recommend-button" type="button" data-action="recommend"><span class="button-label">推荐关注</span><span class="button-count recommend-count">0</span></button><button class="interaction-button comment-toggle-button" type="button" data-action="comment-toggle"><span>添加评论</span><span class="button-count comment-count">0</span></button></div><div class="comment-panel" hidden><div class="comment-tip">评论仅供报告管理人员查看，不会直接公开展示。</div><div class="comment-grid"><label>评论类型<select class="comment-type"><option value="information">补充信息</option><option value="question">提出疑问</option><option value="risk">风险提示</option><option value="suggestion">行动建议</option></select></label><label>姓名（可选）<input class="comment-name" maxlength="30" placeholder="您的姓名"></label><label>单位或部门（可选）<input class="comment-organization" maxlength="50" placeholder="单位或部门"></label></div><label class="comment-text-label">评论内容<textarea class="comment-text" maxlength="500" placeholder="请输入补充信息、问题、风险或行动建议"></textarea></label><div class="comment-submit-row"><span class="comment-message" role="status"></span><button class="comment-submit-button" type="button">提交评论</button></div></div></div></li><li class="event" data-event-id="evt_1dk0bh0"><div class="event-head"><div><div class="tags"><span>价格变化</span><span>供需变化</span></div><h3>原药行情疲软，市场量价齐缩</h3><div class="location">中国</div></div><time>2026-05-17</time></div><div class="row"><b>事实摘要</b><p>2026年5月17日，中农立华原药价格指数报83.06点，同比去年上涨13.61%，环比上月下跌5.61%。除草剂原药价格指数报98.55点，同比去年上涨23.70%。草甘膦原药95%含量报3.5万元/吨，97%含量报3.55万元/吨；草铵膦原药报价5万元/吨。杀虫剂原药价格指数报73.19点，同比去年上涨10.27%。</p></div><div class="row"><b>直接影响</b><p>国内春耕未完全结束，渠道库存出货积极，贸易商、经销商集中抛货，导致主流原药品种价格走低；下游观望情绪浓厚，成交清淡。</p></div><div class="event-foot"><span>资料来源</span><div class="links"><a href="https://vip.cheminfo.cn/news/details/2071995934348926976" target="_blank" rel="noopener noreferrer">查看原文</a></div></div><div class="interaction-block"><div class="interaction-actions"><button class="interaction-button recommend-button" type="button" data-action="recommend"><span class="button-label">推荐关注</span><span class="button-count recommend-count">0</span></button><button class="interaction-button comment-toggle-button" type="button" data-action="comment-toggle"><span>添加评论</span><span class="button-count comment-count">0</span></button></div><div class="comment-panel" hidden><div class="comment-tip">评论仅供报告管理人员查看，不会直接公开展示。</div><div class="comment-grid"><label>评论类型<select class="comment-type"><option value="information">补充信息</option><option value="question">提出疑问</option><option value="risk">风险提示</option><option value="suggestion">行动建议</option></select></label><label>姓名（可选）<input class="comment-name" maxlength="30" placeholder="您的姓名"></label><label>单位或部门（可选）<input class="comment-organization" maxlength="50" placeholder="单位或部门"></label></div><label class="comment-text-label">评论内容<textarea class="comment-text" maxlength="500" placeholder="请输入补充信息、问题、风险或行动建议"></textarea></label><div class="comment-submit-row"><span class="comment-message" role="status"></span><button class="comment-submit-button" type="button">提交评论</button></div></div></div></li></ul></section>
+<section><div class="section-title"><div><i></i><h2>后续关注</h2></div><small>尚待进一步验证的关键变量</small></div><ul class="watch"><li>7月下旬晚稻及蔬菜防虫需求启动情况，这将决定杀虫剂板块何时企稳。</li><li>黄磷等基础原材料价格波动，其对草甘膦等除草剂成本支撑的持续性。</li><li>海外新增订单释放情况，特别是南美及东南亚市场的补货节奏。</li><li>国内农药企业开工率变化，以及高温天气对生产安全及检修的影响。</li></ul></section>
+<footer class="footer">本报告基于本次MCP检索入选的 3 条有效动态和 3 个原文来源自动生成，未进行额外外部事实核验。推荐与评论仅用于后续情报研判 · 2026-07-16</footer>
+</main>
+</div>
+<script>
+(function(){
+  var API_BASE = "https://report-feedback-d7fpscpad7829f64-1323901253.ap-shanghai.app.tcloudbase.com/report-feedback";
+  var REPORT_ID = "rpt_1q90jeg";
+  var SHARE_ID = "sh_lqf2ae";
+  var enabled = /^https:///i.test(API_BASE) && API_BASE.indexOf("YOUR-") === -1;
+
+  if (!enabled) {
+    document.documentElement.classList.add("feedback-disabled");
+    return;
+  }
+
+  function getVisitorId() {
+    var key = "industry_report_visitor_id";
+    var value = localStorage.getItem(key);
+
+    if (!value) {
+      value = "visitor_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 10);
+      localStorage.setItem(key, value);
+    }
+
+    return value;
+  }
+
+  function getProfile() {
+    return {
+      name: localStorage.getItem("industry_report_user_name") || "",
+      organization: localStorage.getItem("industry_report_user_organization") || ""
+    };
+  }
+
+  function saveProfile(name, organization) {
+    localStorage.setItem("industry_report_user_name", name || "");
+    localStorage.setItem("industry_report_user_organization", organization || "");
+  }
+
+  function request(path, options) {
+    options = options || {};
+    options.headers = options.headers || {};
+    options.headers["Content-Type"] = "application/json";
+
+    var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timer = null;
+    if (controller) {
+      options.signal = controller.signal;
+      timer = setTimeout(function(){ controller.abort(); }, 10000);
+    }
+
+    return fetch(API_BASE + path, options).then(function(response){
+      return response.text().then(function(content){
+        var data;
+        try { data = JSON.parse(content); } catch (_) { data = { success:false, error:content || "接口返回异常" }; }
+        if (!response.ok || !data.success) throw new Error(data.error || data.message || "请求失败");
+        return data;
+      });
+    }).catch(function(error){
+      if (error && error.name === "AbortError") throw new Error("请求超时，请检查网络后重试");
+      throw error;
+    }).finally(function(){
+      if (timer) clearTimeout(timer);
+    });
+  }
+
+  function findEvent(element) {
+    return element.closest(".event");
+  }
+
+  function setMessage(panel, message, type) {
+    var target = panel.querySelector(".comment-message");
+    target.textContent = message || "";
+    target.className = "comment-message" + (type ? " " + type : "");
+  }
+
+  function updateEvent(eventElement, state) {
+    var recommendButton = eventElement.querySelector(".recommend-button");
+    var recommendCount = eventElement.querySelector(".recommend-count");
+    var commentCount = eventElement.querySelector(".comment-count");
+
+    recommendCount.textContent = String(state.recommendation_count || state.recommend_count || 0);
+    commentCount.textContent = String(state.comment_count || 0);
+
+    if (state.recommended || state.recommended_by_current_visitor) {
+      recommendButton.classList.add("recommended");
+      recommendButton.querySelector(".button-label").textContent = "已推荐关注";
+    } else {
+      recommendButton.classList.remove("recommended");
+      recommendButton.querySelector(".button-label").textContent = "推荐关注";
+    }
+  }
+
+  function loadFeedback() {
+    var visitorId = getVisitorId();
+    var path = "/api/reports/" + encodeURIComponent(REPORT_ID) + "/feedback?share_id=" + encodeURIComponent(SHARE_ID) + "&visitor_id=" + encodeURIComponent(visitorId);
+
+    request(path).then(function(data){
+      var states = {};
+      (data.events || []).forEach(function(item){
+        if (item && item.event_id) states[item.event_id] = item;
+      });
+      document.querySelectorAll(".event[data-event-id]").forEach(function(eventElement){
+        var eventId = eventElement.getAttribute("data-event-id");
+        updateEvent(eventElement, states[eventId] || {});
+      });
+    }).catch(function(error){
+      console.warn("互动统计加载失败", error);
+      document.querySelectorAll(".interaction-button").forEach(function(button){ button.disabled = true; });
+      document.querySelectorAll(".recommend-button .button-label").forEach(function(label){ label.textContent = "互动暂不可用"; });
+    });
+  }
+
+  document.addEventListener("click", function(event){
+    var recommendButton = event.target.closest(".recommend-button");
+    if (recommendButton) {
+      var eventElement = findEvent(recommendButton);
+      var eventId = eventElement.getAttribute("data-event-id");
+      recommendButton.disabled = true;
+
+      request("/api/feedback/recommend", {
+        method: "POST",
+        body: JSON.stringify({
+          report_id: REPORT_ID,
+          share_id: SHARE_ID,
+          event_id: eventId,
+          visitor_id: getVisitorId(),
+          action: "toggle"
+        })
+      }).then(function(data){
+        updateEvent(eventElement, {
+          recommendation_count: data.recommendation_count,
+          comment_count: Number(eventElement.querySelector(".comment-count").textContent || 0),
+          recommended: data.recommended
+        });
+      }).catch(function(error){
+        window.alert("操作失败：" + error.message);
+      }).finally(function(){
+        recommendButton.disabled = false;
+      });
+      return;
+    }
+
+    var toggleButton = event.target.closest(".comment-toggle-button");
+    if (toggleButton) {
+      var currentEvent = findEvent(toggleButton);
+      var panel = currentEvent.querySelector(".comment-panel");
+      panel.hidden = !panel.hidden;
+
+      if (!panel.hidden) {
+        var profile = getProfile();
+        panel.querySelector(".comment-name").value = profile.name;
+        panel.querySelector(".comment-organization").value = profile.organization;
+        panel.querySelector(".comment-text").focus();
+      }
+      return;
+    }
+
+    var submitButton = event.target.closest(".comment-submit-button");
+    if (submitButton) {
+      var commentEvent = findEvent(submitButton);
+      var commentPanel = commentEvent.querySelector(".comment-panel");
+      var commentText = commentPanel.querySelector(".comment-text").value.trim();
+      var displayName = commentPanel.querySelector(".comment-name").value.trim();
+      var organization = commentPanel.querySelector(".comment-organization").value.trim();
+      var commentType = commentPanel.querySelector(".comment-type").value;
+      var commentEventId = commentEvent.getAttribute("data-event-id");
+
+      if (commentText.length < 2) {
+        setMessage(commentPanel, "请至少输入2个字符。", "error");
+        return;
+      }
+
+      saveProfile(displayName, organization);
+      submitButton.disabled = true;
+      setMessage(commentPanel, "正在提交……", "");
+
+      request("/api/feedback/comment", {
+        method: "POST",
+        body: JSON.stringify({
+          report_id: REPORT_ID,
+          share_id: SHARE_ID,
+          event_id: commentEventId,
+          visitor_id: getVisitorId(),
+          author_name: displayName,
+          author_org: organization,
+          comment_type: commentType,
+          content: commentText,
+          client_comment_id: "cmt_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2, 8)
+        })
+      }).then(function(data){
+        commentEvent.querySelector(".comment-count").textContent = String(data.comment_count || 0);
+        commentPanel.querySelector(".comment-text").value = "";
+        setMessage(commentPanel, data.message || "评论已提交。", "success");
+      }).catch(function(error){
+        setMessage(commentPanel, "提交失败：" + error.message, "error");
+      }).finally(function(){
+        submitButton.disabled = false;
+      });
+    }
+  });
+
+  loadFeedback();
+})();
+</script>
+</body>
+</html>
